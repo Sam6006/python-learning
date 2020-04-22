@@ -7,8 +7,6 @@
 # 员工管理系统
 # 内部转岗 python开发 - go开发
 # 姓名 性别 年龄 新的部门
-# alex None 83 python
-# alex None 85 luffy
 
 # 1000个员工
 # 如果几个员工对象的姓名和性别相同,这是一个人
@@ -31,13 +29,13 @@ class Employee():
 emp_lst = []
 #实例化1000名员工
 for i in range(300):
-	emp_lst.append(Employee('alex',i, 'male', 'python'))
+	emp_lst.append(Employee('erick',i, 'male', 'python'))
 
 for i in range(300):
-	emp_lst.append(Employee('wusir',i, 'male', 'python'))
+	emp_lst.append(Employee('sam',i, 'male', 'python'))
 
 for i in range(300):
-	emp_lst.append(Employee('taibai',i, 'male', 'python'))
+	emp_lst.append(Employee('nick',i, 'male', 'python'))
 
 for i in range(100):
 	emp_lst.append(Employee('alice', i, 'male', 'python'))
