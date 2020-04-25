@@ -3,12 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="67a6f001-a6fe-4f27-9c71-5d54ae51cbe4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05 函数进阶/11.数学模块.py" beforeDir="false" afterPath="$PROJECT_DIR$/day08 模块/10.数学模块.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05 函数进阶/12.时间模块.py" beforeDir="false" afterPath="$PROJECT_DIR$/day08 模块/09.时间模块.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05 函数进阶/13.相对路径.py" beforeDir="false" afterPath="$PROJECT_DIR$/day05 函数进阶/11.相对路径.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -21,10 +38,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/day08 模块/07.sys模块.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/day09 正则/02.re模块.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day08 模块/08.os模块.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/day09 正则/03.分组练习.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/day09 正则/01.正则表达式.py" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/day09 正则/04.爬虫练习.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day08 模块/05.random模块.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/day08 模块/06.random 练习.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1YZgbuYR7XWkQuRqbkIjmNZsEly" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -34,13 +55,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/day09 正则" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\py_pro\基础\day08 模块" />
       <recent name="D:\py_pro\基础\day06 面向对象" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\py_pro\基础\day09 正则" />
       <recent name="D:\py_pro\基础\day03" />
     </key>
   </component>
@@ -56,8 +79,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="02.元字符" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.11.计算一个文件夹的大小">
+    <configuration name="05.random模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="基础" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -65,12 +88,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day09 正则" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day08 模块" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\py_pro\基础\day09 正则\02.字符组、元字符.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day08 模块/05.random模块.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -79,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="02.re模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="06.random 练习" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="基础" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,12 +110,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day09 正则" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day08 模块" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day09 正则/02.re模块.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day08 模块/06.random 练习.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +124,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="03.分组练习" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="07.sys模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="基础" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,12 +132,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day09 正则" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day08 模块" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day09 正则/03.分组练习.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day08 模块/07.sys模块.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -123,7 +146,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="04.爬虫练习" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="08.os模块" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="基础" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,12 +154,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day09 正则" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day08 模块" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day09 正则/04.爬虫练习.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day08 模块/08.os模块.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +168,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="11.计算一个文件夹的大小" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="基础" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,12 +176,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day09 正则" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day08 模块" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day09 正则/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day08 模块/11.计算一个文件夹的大小.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.04.爬虫练习" />
-        <item itemvalue="Python.03.分组练习" />
-        <item itemvalue="Python.02.re模块" />
-        <item itemvalue="Python.02.元字符" />
+        <item itemvalue="Python.11.计算一个文件夹的大小" />
+        <item itemvalue="Python.08.os模块" />
+        <item itemvalue="Python.07.sys模块" />
+        <item itemvalue="Python.06.random 练习" />
+        <item itemvalue="Python.05.random模块" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +241,9 @@
       <workItem from="1587558389916" duration="9183000" />
       <workItem from="1587733302257" duration="572000" />
       <workItem from="1587734812627" duration="8350000" />
-      <workItem from="1587809408971" duration="2148000" />
+      <workItem from="1587809408971" duration="2260000" />
+      <workItem from="1587812137307" duration="302000" />
+      <workItem from="1587812470747" duration="12620000" />
     </task>
     <servers />
   </component>
@@ -241,8 +266,9 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/$07_.coverage" NAME="07.多继承 Coverage Results" MODIFIED="1586143843038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day06 面向对象" />
     <SUITE FILE_PATH="coverage/$05_str.coverage" NAME="05.字符串str Coverage Results" MODIFIED="1583161360858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01" />
+    <SUITE FILE_PATH="coverage/$06_random_.coverage" NAME="06.random 练习 Coverage Results" MODIFIED="1587820236210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08 模块" />
     <SUITE FILE_PATH="coverage/$02__bool__.coverage" NAME="02__bool__ Coverage Results" MODIFIED="1586444561423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day07 内置方法" />
-    <SUITE FILE_PATH="coverage/$11_.coverage" NAME="11.类中方法 Coverage Results" MODIFIED="1586163427851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day06 面向对象" />
+    <SUITE FILE_PATH="coverage/$11_.coverage" NAME="11.计算一个文件夹的大小 Coverage Results" MODIFIED="1587828430751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08 模块" />
     <SUITE FILE_PATH="coverage/$05___init__.coverage" NAME="05.__init__构造方法 Coverage Results" MODIFIED="1586013758836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day06 面向对象" />
     <SUITE FILE_PATH="coverage/$03___len__.coverage" NAME="03.__len__ Coverage Results" MODIFIED="1586572784745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day07 内置方法" />
     <SUITE FILE_PATH="coverage/$03_from_import.coverage" NAME="03.from_import Coverage Results" MODIFIED="1587476136424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08 模块" />
@@ -264,8 +290,9 @@
     <SUITE FILE_PATH="coverage/$03_format.coverage" NAME="03.format字符串填充 Coverage Results" MODIFIED="1584245506780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day03" />
     <SUITE FILE_PATH="coverage/$10_while_.coverage" NAME="10.while 循环 Coverage Results" MODIFIED="1583651817098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/$11___eq__.coverage" NAME="11.__eq__ Coverage Results" MODIFIED="1587049174769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day07 内置方法" />
-    <SUITE FILE_PATH="coverage/$04_.coverage" NAME="04.爬虫练习 Coverage Results" MODIFIED="1587811412801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day09 正则" />
+    <SUITE FILE_PATH="coverage/$04_.coverage" NAME="04.爬虫练习 Coverage Results" MODIFIED="1587812732249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day09 正则" />
     <SUITE FILE_PATH="coverage/$10_number.coverage" NAME="10.number类型强制类型转换 Coverage Results" MODIFIED="1583246604960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01" />
+    <SUITE FILE_PATH="coverage/$08_os.coverage" NAME="08.os模块 Coverage Results" MODIFIED="1587827430457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08 模块" />
     <SUITE FILE_PATH="coverage/$05_filter.coverage" NAME="05.filter Coverage Results" MODIFIED="1585401376454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day05" />
     <SUITE FILE_PATH="coverage/$06_list_tuple.coverage" NAME="06.list tuple Coverage Results" MODIFIED="1583162252918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day01" />
     <SUITE FILE_PATH="coverage/$08___.coverage" NAME="08.流程控制_单项_双项 Coverage Results" MODIFIED="1583651123621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
@@ -278,9 +305,11 @@
     <SUITE FILE_PATH="coverage/$05_.coverage" NAME="05.单例类 Coverage Results" MODIFIED="1586579163936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day07 内置方法" />
     <SUITE FILE_PATH="coverage/$06__.coverage" NAME="06.位运算_优先级 Coverage Results" MODIFIED="1583575648455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/$09___item__.coverage" NAME="09.__item__ Coverage Results" MODIFIED="1587048516069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day07 内置方法" />
+    <SUITE FILE_PATH="coverage/$07_sys.coverage" NAME="07.sys模块 Coverage Results" MODIFIED="1587821815432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08 模块" />
     <SUITE FILE_PATH="coverage/$03_reduce.coverage" NAME="03.reduce Coverage Results" MODIFIED="1585389944623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day05" />
     <SUITE FILE_PATH="coverage/$02_re.coverage" NAME="02.re模块 Coverage Results" MODIFIED="1587739052752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day09 正则" />
     <SUITE FILE_PATH="coverage/$01_.coverage" NAME="01.面向对象初识 Coverage Results" MODIFIED="1585967779621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day06 面向对象" />
+    <SUITE FILE_PATH="coverage/$05_random.coverage" NAME="05.random模块 Coverage Results" MODIFIED="1587819197537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day08 模块" />
     <SUITE FILE_PATH="coverage/$03__.coverage" NAME="03.算数_比较 Coverage Results" MODIFIED="1583571598936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day02" />
     <SUITE FILE_PATH="coverage/$12_locals_globals.coverage" NAME="12.locals_globals Coverage Results" MODIFIED="1585235123073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day04" />
     <SUITE FILE_PATH="coverage/$12_.coverage" NAME="12.案例 Coverage Results" MODIFIED="1587051976825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day07 内置方法" />
