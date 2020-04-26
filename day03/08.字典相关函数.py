@@ -5,11 +5,11 @@
 #字典相关函数
 # 1.增
 dictvar = {}
-dictvar["fhzm"] = "舒则会"
-dictvar["byxh"] = "郭一萌"
-dictvar["qgqc"] = "罗淞峰"
-dictvar["cyly"] = "银燕"
-dictvar["ttyl"] = "刘路"
+dictvar["fhzm"] = "舒11"
+dictvar["byxh"] = "郭22"
+dictvar["qgqc"] = "罗33"
+dictvar["cyly"] = "银33"
+dictvar["ttyl"] = "刘33"
 print(dictvar)
 
 #fromkeys() 使用一组键和默认值创建字典（返回新字典）
@@ -24,7 +24,7 @@ dictvar["a"].append(4)
 print(dictvar)
 
 # 2.删
-dictvar = {'fhzm': '舒则会', 'byxh': '郭一萌', 'qgqc': '罗淞峰', 'cyly': '银燕', 'ttyl': '刘路'}
+dictvar = {'fhzm': '舒11', 'byxh': '郭一1', 'qgqc': '罗11', 'cyly': '银11', 'ttyl': '刘11'}
 # 2.1 pop()       通过键去删除键值对 (若没有该键可设置默认值,预防报错)
 res = dictvar.pop('cyly')
 print(res)
@@ -37,7 +37,7 @@ print(res)
 print(dictvar)
 
 # popitem（）删除最后一个键值对
-dictvar = {'fhzm': '舒则会', 'byxh': '郭一萌', 'qgqc': '罗淞峰', 'cyly': '银燕', 'ttyl': '刘路'}
+dictvar = {'fhzm': '舒11', 'byxh': '郭一1', 'qgqc': '罗11', 'cyly': '银11', 'ttyl': '刘11'}
 res = dictvar.popitem()
 print(res)
 print(dictvar)

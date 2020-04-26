@@ -54,7 +54,7 @@ tuplevar = 1,2
 print(tuplevar,type(tuplevar))
 
 # 定义一个元组
-tuplevar = ("李祥海","王成全","赖廷","银燕","毕杨生")
+tuplevar = ("aaa","bbb","ccc","ddd","eee")
 
 #获取元组当中的值
 res = tuplevar[2]

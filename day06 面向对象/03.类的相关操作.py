@@ -10,7 +10,7 @@
 """
 class Plane():
 	#公有成员属性
-	captain = '李祖庆'
+	captain = '李1庆'
 	#私有成员属性
 	__air_hostess = 20
 

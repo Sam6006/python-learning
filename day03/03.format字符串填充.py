@@ -17,7 +17,7 @@
 10 原字符个数+要填充的个数 = 长度10
 """
 strvar = "{who:*^10}在长春长生公司{something:!<10},感觉{feel:>>8}"
-res = strvar.format(who='李祖庆',something='扎疫苗',feel='爽歪歪')
+res = strvar.format(who='李22',something='扎疫苗',feel='爽歪歪')
 print(res)
 
 #进制转换等特殊符号的使用(:d :f :s :,)

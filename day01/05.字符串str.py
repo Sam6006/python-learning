@@ -59,10 +59,10 @@ strvar = "树则会买了%d个面膜"   %    (10)
 print(strvar)
 
 #%2d 默认数字居右
-strvar = "郭一萌买了%2d个布加迪威龙" % (7)
+strvar = "alex买了%2d个布加迪威龙" % (7)
 print(strvar)
 # %-2d默认数字居左
-strvar = strvar = "郭一萌买了%-2d个布加迪威龙" % (7)
+strvar = strvar = "alex买了%-2d个布加迪威龙" % (7)
 print(strvar)
 
 # %f 小数点部分自动保存6位小数
@@ -77,6 +77,6 @@ strvar = "%s" %("好看的皮囊千篇一律,有趣的灵魂300多斤")
 print(strvar)
 
 #综合案例
-strvar = "%s开工资了,发了%.2f元,昨天晚上买了%d个娃娃,心情%s" % ("王成全",99.1234,2,"感觉身体被掏空")
+strvar = "%s开工资了,发了%.2f元,昨天晚上买了%d个娃娃,心情%s" % ("小明",99.1234,2,"感觉身体被掏空")
 print(strvar)
 

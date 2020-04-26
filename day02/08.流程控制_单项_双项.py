@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 @Time ： 2020/3/7 18:12
-@Auth ： Sam
 @File ：08.流程控制_单项_双项.py
 @IDE ：PyCharm
 """

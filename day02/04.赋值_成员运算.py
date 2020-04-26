@@ -57,15 +57,15 @@ res = "错,那" in strvar
 print(res)
 
 #tuple list set
-tup = ("吴波","帅乐","毕杨生","刘得元")
-res = '刘得元' in tup
+tup = ("aaa","bb","ccc","ddd")
+res = 'ddd' in tup
 print(res)
 
-lst  = ["吴波","帅乐","毕杨生","刘得元","温红杰"]
-res = "温红杰" not in lst
+lst  = ["aa","bb","dd","cc","ee"]
+res = "ee" not in lst
 print(res)
-setvar = {"赖廷","银燕","王成全"}
-res = "银燕" not in setvar
+setvar = {"aa","bb","cc"}
+res = "bb" not in setvar
 print(res)
 
 # dict in 或not in 判断的是字典的键，不是那个值

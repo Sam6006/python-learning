@@ -16,9 +16,9 @@
 setvar = set()
 print(setvar,type(setvar))
 
-setvar = {"刘德华","张学友","郭富城","王文"}
+setvar = {"刘德华","张学友","郭富城","sam"}
 print( setvar   ,   type(setvar)   )
-setvar = {"刘德华","张学友","郭富城","王文","王文"}
+setvar = {"刘德华","张学友","郭富城","sam","sam"}
 print(setvar)
 
 

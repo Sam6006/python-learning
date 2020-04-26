@@ -39,9 +39,9 @@ res = set1 ^ set2
 print(res)
 
 # issubset() 判断是还是否是子集
-set1 = {"舒则会","郭一萌","黄瓜","孙兆强"}
-set2 = {"舒则会","郭一萌"}
-set3 = {"舒则会","郭一萌","黄瓜","孙兆强"}
+set1 = {"舒1会","郭2萌","黄瓜","孙33"}
+set2 = {"舒1会","郭2萌"}
+set3 = {"舒1会","郭2萌","黄瓜","孙33"}
 res = set2.issubset(set1)
 print(res)
 
@@ -50,8 +50,8 @@ res = set2 < set1 # 真集合
 print(res)
 
 #issuperset() 判断是否是父集
-set1 = {"舒则会","郭一萌","黄瓜","孙兆强"}
-set2 = {"舒则会","郭一萌"}
+set1 = {"舒1会","郭2萌","黄瓜","孙33"}
+set2 = {"舒1会","郭2萌"}
 res = set1.issuperset(set2)
 print(res)
 
@@ -60,14 +60,14 @@ res = set1 > set2
 print(res)
 
 #isdisjoint()检测两集合是不是想交
-set1 = {"舒则会","郭一萌","黄瓜","孙兆强"}
-set2 = {"舒则会","郭一萌"}
+set1 = {"舒1会","郭2萌","黄瓜","孙33"}
+set2 = {"舒1会","郭2萌"}
 res = set1.isdisjoint(set2)
 print(res) #False 代表相交
 
 #集合相关函数
 #add() 向集合中添加数据
-setvar = {"赖廷","银燕","毕养生"}
+setvar = {"赖1","银2","毕33"}
 setvar.add('易烊千玺')
 print(setvar)
 # update() 迭代增加

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 @Time ： 2020/3/7 16:48
-@Auth ： Sam
 @File ：03.算数_比较.py
 @IDE ：PyCharm
 """

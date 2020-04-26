@@ -60,7 +60,7 @@ def func(**kwargs):
 	print(("吃瓜群众:",str2))
 
 
-func(monitor="舒则会",classflower="郭一萌",eatgua1="黄花",eatgua2="李村海")
+func(monitor="舒1会",classflower="郭2萌",eatgua1="黄花",eatgua2="李4海")
 
 
 

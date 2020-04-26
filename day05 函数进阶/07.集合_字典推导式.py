@@ -68,7 +68,7 @@ enumerate(iterable, [start=0])
 	迭代器
 '''
 from collections import Iterable, Iterator
-lst = ['罗淞峰',"李祥海","银燕","赖廷"]
+lst = ['罗1峰',"李2海","银3","赖4"]
 it = enumerate(lst)
 #print(it) #<enumerate object at 0x000001FCB4D6B3A8>
 #print(isinstance(it,Iterator))
@@ -84,7 +84,7 @@ it = enumerate(lst)
 '''
 # dict 强转迭代器变成字典
 
-# {0: '罗淞峰', 1: '李祥海', 2: '银燕', 3: '赖廷'}
+# {0: '罗1峰', 1: '李2海', 2: '银3', 3: '赖4'}
 res = dict(it)
 print(res)
 
@@ -108,17 +108,17 @@ zip(iterable,......)
 
 正常按照索引进行配对，放到元组中，如果找不到配对的选项，直接放弃
 '''
-lst1 = ["吴波","帅乐","温素文"]
-lst2 = ["夜光花","吴耀橘","王照"]
-lst3 = ["温红杰","刘璐","陈凤杰"]
+lst1 = ["吴1","帅2","温3文"]
+lst2 = ["夜光花","吴2橘","王3"]
+lst3 = ["温1杰","刘2","陈3杰"]
 it = zip(lst1,lst2,lst3)
 print(it)
 print(isinstance(it,Iterable))
 print(list(it))
 
 # dict强转迭代器变成字典
-lst2 = ["夜光花","吴耀橘","王照"]
-lst3 = ["温红杰","刘璐","陈凤杰"]
+lst2 = ["夜光花","吴2橘","王3"]
+lst3 = ["温1杰","刘1","陈2杰"]
 
 it = zip(lst2,lst3)
 res = dict(it)

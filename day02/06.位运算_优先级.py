@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 @Time ： 2020/3/7 17:42
-@Auth ： Sam
 @File ：06.位运算_优先级.py
 @IDE ：PyCharm
 """

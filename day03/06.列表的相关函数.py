@@ -14,7 +14,7 @@ lst.insert(1,'nick')
 print(lst)
 
 #删
-listvar = ["邓良辉","李祖清","舒则会","郭一萌","黄花"]
+listvar = ["邓11","李22","舒33","郭44","黄花"]
 # 1. pop 通过指定索引删除元素,若没有索引移除最后那个 (推荐使用)
 listvar.pop()
 print(listvar)
@@ -22,8 +22,8 @@ listvar.pop(0)
 print(listvar)
 
 #2.remove 通过给予的值来删除，如果多个相同元素，默认删除第一个
-listvar = ["邓良辉","李祖清","舒则会","郭一萌","舒则会","黄花"]
-listvar.remove('舒则会')
+listvar = ["邓11","李22","舒33","郭44","黄花"]
+listvar.remove('舒33')
 print(listvar)
 
 #3.clear 清空列表
@@ -31,19 +31,19 @@ listvar.clear()
 print(listvar)
 
 # 其他相关函数
-listvar = ["邓良辉","李祖清","舒则会","郭一萌","舒则会","黄花","郭一萌","郭一萌"]
+listvar = ["邓11","李22","舒33","郭44","舒33","黄花","郭44","郭44"]
 # 1.index 获取某个值在列表中的索引
 """index(要搜索的值,[开始索引,结束索引])"""
-res = listvar.index('郭一萌')
+res = listvar.index('郭44')
 print(res)
 
-res = listvar.index('郭一萌',4)
+res = listvar.index('郭44',4)
 print(res)
-res = listvar.index("郭一萌",6,7)
+res = listvar.index("郭44",6,7)
 print(res)
 
 # count() 计算某个元素出现的次数
-res = listvar.count("郭一萌")
+res = listvar.count("郭44")
 print(res)
 
 #sort()列表排序（默认从小到大）
