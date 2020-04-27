@@ -1,0 +1,5 @@
+2020-04-27 20:58:53,332 - root - DEBUG - debug message
+2020-04-27 20:58:53,332 - root - INFO - 我的信息
+2020-04-27 20:58:53,332 - root - WARNING - warning message
+2020-04-27 20:58:53,332 - root - ERROR - error message
+2020-04-27 20:58:53,333 - root - CRITICAL - critical message

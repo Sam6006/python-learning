@@ -1,0 +1,5 @@
+Mon, 27 Apr 2020 20:45:16 17.logging 模块.py[line:39] DEBUG debug message
+Mon, 27 Apr 2020 20:45:16 17.logging 模块.py[line:40] INFO info message
+Mon, 27 Apr 2020 20:45:16 17.logging 模块.py[line:41] WARNING warning message
+Mon, 27 Apr 2020 20:45:16 17.logging 模块.py[line:42] ERROR error message
+Mon, 27 Apr 2020 20:45:16 17.logging 模块.py[line:43] CRITICAL critical message
