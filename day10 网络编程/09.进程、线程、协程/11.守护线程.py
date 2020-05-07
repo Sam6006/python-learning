@@ -10,6 +10,7 @@ def func1():
 def func2():
 	print('我是线程2，start')
 	time.sleep(3)
+	print('我是线程2，end')
 
 #启动线程1
 '''线程可以选择不加if __name == "__main__": 因为线程共享同一份资源， 当然加上更好 '''
