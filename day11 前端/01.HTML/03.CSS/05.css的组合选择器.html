@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*p{*/
+        /*    color: red;*/
+        /*    background-color: gainsboro;*/
+        /*}*/
+        /*div{*/
+        /*    color: red;*/
+        /*    background-color: gainsboro;*/
+        /*}*/
+        /* 1 多元素选择器*/
+        /*p,div{*/
+        /*    color: red;*/
+        /*    background-color: gainsboro;*/
+        /*}*/
+         /* 2 后代选择器*/
+        /*.c1 > .c2{*/
+        /*    color: red;*/
+        /*}*/
+        .c1 div .c2{
+            color: red;
+        }
+        /*.c6 .c9{*/
+        /*    color: red;*/
+        /*}*/
+        .c6 .c7 .c8 .c9{
+            color: red;
+        }
+        /* 4 兄弟元素选择器*/
+        /*#il ~ .c10{*/
+        /*    color: red;*/
+        /*}*/
+        /* 3 毗邻元素选择器*/
+        #il + .c10{
+            color: red;
+        }
+        /* 4 and选择器*/
+        p.c11{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<p>alex</p>
+<div>egon</div>
+<hr>
+<div class="c1">
+    <div class="c2">123</div>
+    <div>
+        <p class="c2">345</p>
+    </div>
+</div>
+<div class="c2">234</div>
+
+<div class="c6">
+    <div class="c7">
+        <div class="c8">
+            <div class="c9">999</div>
+        </div>
+    </div>
+</div>
+
+<ul class="outer">
+    <li>111</li>
+    <li id="il">222</li>
+    <li>333</li>
+    <li class="c10">444</li>
+</ul>
+<div class="c11">666</div>
+<p class="c11">888</p>
+<span class="c11">000</span>
+<span class="c11">000</span>
+<span class="c11">000</span>
+<span class="c11">000</span>
+
+
+<p id="i2">123</p>
+</body>
+</html>
