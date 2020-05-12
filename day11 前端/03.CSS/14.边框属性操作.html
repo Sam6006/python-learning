@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            width: 200px;
+            height: 200px;
+            /*border-width: 1px;*/
+            /*border-style: dashed;*/
+            /*border-color: red;*/
+             /*通常使用简写方式：*/
+            border: solid red 1px;
+            /*border-left: solid red 1px;*/
+            /*用这个属性能实现圆角边框的效果 将border-radius设置为长或高的一半即可得到一个圆形*/
+            border-radius: 20px;
+
+        }
+        /*列表属性*/
+        /*list-style-type     设置列表项标志的类型。
+        list-style-image    将图象设置为列表项标志。
+        list-style-position 设置列表中列表项标志的位置。
+        list-style          简写属性。用于把所有用于列表的属性设置于一个声明中
+
+        使用图像来替换列表项的标记:
+        ul {
+                list-style-image: url('');
+            }*/
+        ul{
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="c1"></div>
+<ul>
+    <li>123</li>
+    <li>345</li>
+    <li>456</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            background-color: rebeccapurple;
+            width: 200px;
+            height: 200px;
+            display: inline; /*块级标签设置为内联标签*/
+        }
+        .c2{
+            background-color: green;
+            width: 300px;
+            height: 300px;
+             /*display: block;内联标签设置为块级标签*/
+            /*display: none;*/
+            visibility: hidden;
+        }
+        .c3{
+            background-color: deeppink;
+            width: 200px;
+            height: 200px;
+             /*display: none;隐藏某标签*/
+            /*注意与visibility:hidden的区别：
+            visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。
+            display:none可以隐藏某个元素，且隐藏的元素不会占用任何空间。也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。*/
+
+        }
+    </style>
+</head>
+<body>
+<div class="c1">123</div>
+<hr>
+<span class="c2">345</span>
+<hr>
+<div class="c3"></div>
+<!--
+
+块级标签 (block):
+      1 独占一行
+      2 可设长宽
+内联标签(inline):
+       1  按文本内容占比
+       2 不可设置长宽
+ css布局的核心:  如何在一行展示多个可设置长宽的元素
+-->
+</body>
+</html>

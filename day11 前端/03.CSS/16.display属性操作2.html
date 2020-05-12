@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            background-color: rebeccapurple;
+            width: 200px;
+            height: 200px;
+            /*display:inline-block可做列表布局，其中的类似于图片间的间隙小bug可以通过如下设置解决：*/
+            display: inline-block;
+        }
+        .c2{
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+
+        }
+        .c3{
+            background-color: deeppink;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            position: absolute;
+            right: 120px;
+            top: 0;
+
+        }
+        .p{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="p">
+    <div class="c1">123</div>
+    <div class="c2">345</div>
+    <div class="c3"></div>
+
+</div>
+
+</body>
+</html>
