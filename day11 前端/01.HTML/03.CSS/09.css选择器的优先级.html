@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        span{
+            color: blue;
+        }
+        .c1 .c3 span{
+            color: chocolate;
+        }
+        .c1 .c4{
+            color: gainsboro;
+        }
+        #il{
+            color: #000;
+        }
+        .c4{
+            color: deeppink!important;
+        }
+    </style>
+</head>
+<body>
+<!--
+优先级:
+     行内式 1000
+     id  100
+     class 10
+     标签选择器 1
+     !important
+-->
+
+<div class="c1">
+    <div class="c2">
+        <div class="c3">
+            <span class="c4" id="il" style="color: red;">alex</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

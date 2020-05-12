@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            color: deeppink;
+        }
+        p{
+            color: green;
+        }
+        .c2 a{
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+继承是CSS的一个主要特征，它是依赖于祖先-后代的关系的。继承是一种机制，
+它允许样式不仅可以应用于某个特定的元素，还可以应用于它的后代。
+例如一个body定义了的字体颜色值也会应用到段落的文本中。
+
+body {
+  color: red;
+}
+此时页面上所有标签都会继承body的字体颜色。然而CSS继承性的权重是非常低的，是比普通元素的权重还要低的0。
+
+我们只要给对应的标签设置字体颜色就可覆盖掉它继承的样式。
+继承是CSS重要的一部分，我们甚至不用去考虑它为什么能够这样，
+但CSS继承也是有限制的。有一些属性不能被继承，如：border, margin, padding, background等。
+-->
+<div class="c1">
+    <p>abc</p>
+    <div>123</div>
+</div>
+<div class="c2">
+    <a href="#">click</a>
+</div>
+</body>
+</html>
