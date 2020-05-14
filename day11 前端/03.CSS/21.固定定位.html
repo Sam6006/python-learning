@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .c1{
+            height: 3000px;
+            background-color: gainsboro;
+        }
+        .return{
+            width: 120px;
+            height: 60px;
+            background-color: rebeccapurple;
+            text-align: center;
+            color: white;
+            line-height: 60px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="c1"></div>
+<div class="return">返回顶部</div>
+<!--
+ fixed：对象脱离正常文档流，使用top，right，bottom，left等属性以窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。而其层叠通过z-index属性 定义。
+  注意点： 一个元素若设置了 position:absolute | fixed; 则该元素就不能设置float。这 是一个常识性的知识点，因为这是两个不同的流，一个是浮动流，
+  另一个是“定位流”。但是 relative 却可以。因为它原本所占的空间仍然占据文档流。
+在理论上，被设置为fixed的元素会被定位于浏览器窗口的一个指定坐标，不论窗口是否滚动，它都会固定在这个位置。
+
+-->
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+
+            border: 1px solid red;
+            width: 300px;
+        }
+        #box1{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        #box2{
+            background-color: deeppink;
+            width: 100px;
+            height: 100px;
+            float: right;
+        }
+        #box3{
+            background-color: pink;
+            height: 140px;
+            width: 300px;
+        }
+        .clearfix:after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container clearfix">
+    <div id="box1">box1 向左浮动</div>
+    <div id="box2">box2 向右浮动</div>
+</div>
+<div id="box3">box3</div>
+
+<!--
+
+    .clearfix:after {             <----在类名为“clearfix”的元素内最后面加入内容；
+    content: ".";                 <----内容为“.”就是一个英文的句号而已。也可以不写。
+    display: block;               <----加入的这个元素转换为块级元素。
+    clear: both;                  <----清除左右两边浮动。
+    visibility: hidden;           <----可见度设为隐藏。注意它和display:none;是有区别的。
+                                       visibility:hidden;仍然占据空间，只是看不到而已；
+    line-height: 0;               <----行高为0；
+    height: 0;                    <----高度为0；
+    font-size:0;                  <----字体大小为0；
+    }
+
+    .clearfix { *zoom:1;}         <----这是针对于IE6的，因为IE6不支持:after伪类，这个神
+                                       奇的zoom:1让IE6的元素可以清除浮动来包裹内部元素。
+
+
+整段代码就相当于在浮动元素后面跟了个宽高为0的空div，然后设定它clear:both来达到清除浮动的效果。
+之所以用它，是因为，你不必在html文件中写入大量无意义的空标签，又能清除浮动。
+<div class="head clearfix"></div>
+
+
+-->
+</body>
+</html>

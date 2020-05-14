@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .c1{
+            background-color: rebeccapurple;
+            width: 200px;
+            height: 200px;
+
+        }
+        .c2 {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .c3{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+        }
+        .parent{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="c1"></div>
+<div class="parent">
+    <div class="c2"></div>
+</div>
+<div class="c3"></div>
+
+<!--
+相对定位:
+     1 参照物:自己原来所在位置
+     2 没有脱离文档流
+
+绝对定位:
+     1 参照物:已经定位了的父级标签,如果该级没有,一直向上找
+     2 脱离文档流
+
+
+
+
+-->
+</body>
+</html>

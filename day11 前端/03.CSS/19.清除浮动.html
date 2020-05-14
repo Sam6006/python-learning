@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1{
+            background-color: rebeccapurple;
+            width: 200px;
+            height: 200px;
+            /*float: left;*/
+            clear: right;
+
+        }
+        .c2{
+            background-color: green;
+            width: 200px;
+            height: 300px;
+            /*float: left;*/
+            clear: right;
+
+        }
+        .c3{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            float: left;
+
+        }
+    </style>
+</head>
+<body>
+<div class="c1"></div>
+<div class="c2"></div>
+<div class="c3"></div>
+<!--
+清除浮动
+clear语法：
+clear : none | left | right | both
+取值：
+none : 默认值。允许两边都可以有浮动对象
+left : 不允许左边有浮动对象
+right : 不允许右边有浮动对象
+both : 不允许有浮动对象
+把握住两点：1、元素是从上到下、从左到右依次加载的。
+ 2、clear: left;对自身起作用，一旦左边有浮动元素，
+ 即切换到下一行来保证左边元素不是浮动的，依据这一点解决父级塌陷问题。
+-->
+</body>
+</html>
