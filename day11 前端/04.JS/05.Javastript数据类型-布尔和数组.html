@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+/*    // 布尔值 boolean
+    var boo2 = true
+    alert(boo2)
+    alert(typeof boo2) // boolean
+
+    var boo3 = false
+    alert(boo3)
+    alert(typeof boo3)
+    (空字符串)、0、null、undefined、NaN都是false。
+*/
+    //数组（列表)
+    //数组有2种声明方式
+        //1.通过new Array(成员，成员....）
+        /*    var arr1 = new Array("苹果","香蕉","葡萄")
+    alert(arr1)
+    alert(typeof arr1) // 数组的数据类型,属于对象*/
+    //2. 通过中括号进行声明
+    var lst = [55,22,44];
+     // 获取数组中的成员,可以通过下标索引来进行获取,
+    // 数组的中成员索引,从左往右逐一递增,从0开始
+    //console.log(lst[1])
+    //常用方法
+    // console.log(lst.length); //数组的大小
+    // lst.push(55);//尾部追加元素
+    // console.log(lst); //获取尾部的元素
+    // console.log(lst.pop());
+    // lst.unshift(0);
+    // console.log(lst); //头部插入元素
+    // lst.shift(); 头部移除元素
+    // console.log(lst);
+    // console.log(lst.slice(1,2)) 切片
+    // console.log(lst.reverse()) 反转
+    //join 将数组元素连接成字符串
+    //console.log(lst.sort()) //排序
+    /*
+    * 关于sort()需要注意：
+    如果调用该方法时没有使用参数，将按字母顺序对数组中的元素进行排序，说得更精确点，是按照字符编码的顺序进行排序。要实现这一点，
+    * 首先应把数组的元素都转换成字符串（如有必要），以便进行比较。
+    如果想按照其他标准进行排序，就需要提供比较函数，该函数要比较两个值，
+    * 然后返回一个用于说明这两个值的相对顺序的数字。比较函数应该具有两个参数 a 和 b，其返回值如下：
+    若 a 小于 b，在排序后的数组中 a 应该出现在 b 之前，则返回一个小于 0 的值。
+    若 a 等于 b，则返回 0。
+    若 a 大于 b，则返回一个大于 0 的值。*/
+    // function sortNumber(a,b){
+    //     return a - b
+    // }
+    // var arr1 = [11, 100, 22, 55, 33, 44];
+    // console.log(arr1.sort(sortNumber));
+    lst.splice(1,1,'aaa');//删除元素，并向数组添加新元素。
+    console.log(lst)
+</script>
+</body>
+</html>
