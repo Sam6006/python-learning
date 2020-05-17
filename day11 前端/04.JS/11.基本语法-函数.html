@@ -61,11 +61,24 @@
     // console.log(ret)
 
     //函数中的arguments参数
-    function add(a,b,c) {
-        console.log(a + b + c);
-        console.log(arguments.length)
-    }
-    add(1,2,3)
+    // function add(a,b,c) {
+    //     console.log(a + b + c);
+    //     console.log(arguments.length)
+    // }
+    // add(1,2,3)
+
+    //forEach
+    lst = [11,22,33];
+    lst.forEach(function (i) {
+        console.log(i)
+    });
+    lst.forEach(function (k,v) {
+        console.log(k,v)
+    });
+    //map
+    lst.map(function (i) {
+        console.log(i+1)
+    })
 
 
 
