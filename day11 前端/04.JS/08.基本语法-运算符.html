@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //数据之间，可以进行运算
+
+    //1.算术运算符
+    //+-*/ % ** [幂运算]
+    var num1 = 10, num2 = 4;
+    console.log(num1 % num2);// 求余数
+    //计算机中的小数运算都是近似的运算，没有绝对的结果，很多数值在处理过程中一定要注意的就是检查值是否正常
+    var num3 = 7.1, num4 = 0.8;
+    console.log(num3 + num4); // 丢失精度, 7.8999999999999995
+
+    //2.比较运算符，计算的结果最终都必然是布尔值[要么true, 要么false]
+     // > < >= <= ==  ===    !=
+    // ===全等于，判断两边的变量或者数据是否值相等并且数据类型一致
+    //== 等于，判断两边的变量或都数据是否相等
+    var num5 = 100, num6 = "100", num7 = 50; //当一个字符串里面全都由数字构成，这种我们称之为"数字字符串"
+    console.log(num5 == num6); //true表示相等
+    console.log(num5 == num7); //false表示不相等
+
+    console.log(num5 === num6);// false,2个条件中,类型不一样
+
+    //一个等号，不是判断，是赋值，指代是把右边的数据或变量，在接下来的程序中可以使用左边的变量来代表它
+    //3.赋值运算
+    // =
+    // +=
+    // -=
+    // *=
+    // /=
+    // %=
+    var num8 = 5;
+    num8 += 10; // num8 = num8 + 10
+    console.log(num8);
+
+    var num9 = 10;
+    num9 %=3;
+    console.log(num9);
+
+    //4.逻辑运算符，一般最终运算结果也是布尔值，但是有几个特殊
+    //当出现多个判断/比较的时候，希望这几个判断条件结果进行关联，就可以使用逻辑运算符
+    //and && 判断两边的表达式的运算结果是否都是真
+    //or ||  判断两边的表达的运算结果是否有其中一个是真
+    //not !  对右边的表达式运算结果进行取反
+
+    var test1 = true;
+    var test2 = true;
+    console.log(test1 && test2); //true
+    console.log(test1 && test2 && false); //false
+
+    console.log(test1 || test2 || false); //true
+    console.log(false || false); //false
+
+    console.log(!test1); // false
+    console.log(!false); // true
+
+    //高级用法
+    //使用 && 和 || 在某种特殊情况下，出现短路现象
+    //使用 && 出现短路现象条件是： 左边的条件是true，程序会把右边的表达式直接结果返回
+    var test1 = 100;
+    var test2 = true;
+    var test3 = true && test1;
+    console.log(test3);
+
+    //使用 || 出现短路现象条件是：左边的条件是false，程序会把右边的表达式直接结果返回
+    var test4 = 100;
+    var test5 = false;
+    var test6 = false || test4;
+    console.log(test6); // 100
+
+    //查看数据的布尔性
+    // 可以使用 ！ 对数据进行布尔值转换
+    var test7 = 10;
+    console.log( !!test7);//true
+    console.log( !!0); //false 0.0
+    console.log( !!"" ); // false
+    console.log( !!-1 ); // true
+    console.log( !!null ); // false
+    console.log( !!undefined ); // false
+
+    //特殊的赋值符号， 在js中叫自增自减运算符
+    // ++ 在原来数据的基础上加1， 用法a++ 和 ++a
+    var num1 = 10;
+    console.log(++num1); //先完成自增 +1 然后再执行当前一条数据语句
+    var num2 = 10;
+    console.log(num2++); // 先执行这条语句,语句执行完以后,再进行自增
+    console.log(num2)  // 11
+
+    //三元表达式[判断语句的简写]
+    //条件？结果1：结果2
+    //条件为true,则表达式的结果为结果1
+    //条件为false,则表达式的结果为结果2
+
+    var ret2 = 100;
+    var ret3 = ret2 > 10? 'ret2大于10' : 'ret2小于等于10';
+    console.log(ret3);
+
+    //运算符中，有多种不同的运算符写在一起的时候，要考虑好运算符的优先级
+    var t = 1;
+    var ret4 = t + ( (2 > 1) && 3);
+    console.log(ret4)
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

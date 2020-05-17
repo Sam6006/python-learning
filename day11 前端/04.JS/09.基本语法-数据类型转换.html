@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var ret1 = 100 + "";
+    console.log(ret1);
+    console.log(typeof ret1);
+
+    var ret2 = ret1 + 20;
+    console.log(ret2); // 10020
+
+    //Javascript 是一门弱类型语言
+    //这种语言的特征就是: 会根据当前语句所在的环境通过改变自身类型来导致改变运算结果
+    var ret3 = 2019 + "-" +10 + "-" + 13;
+    console.log(ret3); // 2019-10-13
+
+    var ret4 = "100" - 5; //这里由解析器执行的时候，会自动把 "100" 转成数字
+    console.log(ret4);
+
+    //javascript 也提供了强制转换类型的方法
+    //通过基本类型函数来转成不同的数据类型
+    //Number(参数) //表示把参数转换成数值
+    //Boolean(参数)  //表示把参数转换成布尔值
+    //String(参数)  //表示把参数转换成字符串
+
+    var ret5 = "100斤";
+    var ret6 = String(ret5);
+    console.log(ret6);
+    console.log(typeof ret6);
+
+    var ret7 = '100斤';
+    console.log(Number(ret7)); //NaN
+
+    //把数值转换成整数parseInt(参数)
+    //把数值转换成小数parseFloat(参数)
+    var ret5 = '3.14';
+    var ret6 = parseFloat(ret5);
+    var ret7 = parseInt(ret6);
+
+    console.log(ret6); //3.14
+    console.log(typeof ret6); //number
+    console.log(ret7); //3
+
+    //把一个字符串减去0 也可以实现转换数据类型的
+    var ret8 = new Date(); //获取当前时间的对象
+    console.log(ret8); //Sun May 17 2020 16:13:38 GMT+0800 (中国标准时间)
+    console.log(ret8 - 0)  //1589703252355 数值时间戳[微秒]
+
+
+
+
+</script>
+</body>
+</html>
