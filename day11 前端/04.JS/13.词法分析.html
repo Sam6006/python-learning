@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    /*
+    JavaScript中在调用函数的那一瞬间，会先进行词法分析。
+    词法分析的过程：
+    当函数调用的前一瞬间，会先形成一个激活对象：Avtive Object（AO），并会分析以下3个方面：
+        1:函数参数，如果有，则将此参数赋值给AO，且值为undefined。如果没有，则不做任何操作。
+        2:函数局部变量，如果AO上有同名的值，则不做任何操作。如果没有，则将此变量赋值给AO，并且值为undefined。
+        3:函数声明，如果AO上有，则会将AO上的对象覆盖。如果没有，则不做任何操作。
+    函数内部无论是使用参数还是使用局部变量都到AO上找。
+    看两个例子：
+    * */
+    //1
+    /*
+    var age = 18;
+    function foo(){
+      console.log(age);
+      var age = 22;
+      console.log(age);
+    }
+    foo();  // 问：执行foo()之后的结果是？
+    */
+    //2.
+    var age = 18;
+    function foo(){
+        console.log(age);
+        var age = 22;
+        console.log(age);
+        function age(){
+        console.log("呵呵");
+        }
+        console.log(age);
+    }
+    foo();  // 执行后的结果是？
+
+/*
+词法分析过程：
+    1、分析参数，有一个参数，形成一个 AO.age=undefine;
+    2、分析变量声明，有一个 var age, 发现 AO 上面已经有一个 AO.age，因此不做任何处理
+    3、分析函数声明，有一个 function age(){...} 声明， 则把原有的 age 覆盖成 AO.age=function(){...};
+
+最终，AO上的属性只有一个age，并且值为一个函数声明
+执行过程：
+注意：执行过程中所有的值都是从AO对象上去寻找
+    1、执行第一个 console.log(age) 时，此时的 AO.age 是一个函数，所以第一个输出的一个函数
+    2、这句 var age=22; 是对 AO.age 的属性赋值， 此时AO.age=22 ，所以在第二个输出的是 22
+    3、同理第三个输出的还是22, 因为中间再没有改变age值的语句了
+*/
+
+</script>
+
+</body>
+</html>
