@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //三大流程语句
+    //判断逻辑语句 if... if.....else...... if..else if..  if..else if.. else   switch....case...case...
+    //中断语句  break  中断当前语句的执行， 直接跳出语句，只能用于switch和for 或者while
+    //         continue 停止运行本次代码，进行下一次循环，只能用于for 或者while
+
+
+    //循环语句   for....  while...
+
+    // var ret = 10;
+    // if (ret<50){
+    //     //条件结果为true,这里的代码会被执行
+    //     console.log('ret小于50')
+    // }
+
+    // var ret = 100;
+    // if (ret<50){
+    //     //条件结果为true,这里的代码会被执行
+    //     console.log('ret小于50')
+    // }else{
+    //     //条件结果为false，这里的代码会被执行
+    //     console.log('ret大于50')
+    // }
+
+    //判断今天是星期几
+    // var date = new Date().getDay(); //获取今天是星期几
+    // console.log(date);
+    // if (date == 0){
+    //     console.log('今天是星期天')
+    // }else if(date == 1){
+    //     console.log('今天是星期一')
+    // }else if(date == 2){
+    //     console.log('今天是星期二')
+    // }else if(date == 3){
+    //     console.log('今天是星期三')
+    // }else if(date == 4){
+    //     console.log('今天是星期四')
+    // }else if(date == 5){
+    //     console.log('今天是星期五')
+    // }else if(date == 6){
+    //     console.log('今天是星期六')
+    // }
+
+    // var date = new Date().getDay(); //获取今天是星期几
+    // switch (date) {
+    //     case 0:
+    //         console.log('今天是周天');
+    //         break;
+    //     case 1:
+    //         console.log('今天是周1');
+    //         break;
+    //     case 2:
+    //         console.log('今天是周2');
+    //         break;
+    //     case 3:
+    //         console.log('今天是周3');
+    //         break;
+    //     case 4:
+    //         console.log('今天是周4');
+    //         break;
+    //     case 5:
+    //         console.log('今天是周5');
+    //         break;
+    //     case 6:
+    //         console.log('今天是周6');
+    //         break;
+    // }
+
+    //循环语句
+    // while (条件){
+    //     条件为真的时候，执行这里的代码
+    // }
+
+    // var num = 1;
+    // while (num<10){
+    //     console.log('循环里面的代码被执行了');
+    //     console.log(num);
+    //     //让条件发生变化
+    //     num += 2 //条件自增量
+    // }
+
+    // for (循环初始化; 循环的判断条件; 条件自增量){
+    //     循环里面的代码被执行了
+    // }
+
+    // for (var num = 1; num<10; num +=2){
+    //     console.log('循环里面的代码被执行了');
+    //     console.log(num);
+    // }
+    //for 还可以用于遍历输出数组成员[这里用的用法和python里面的几乎一样]
+    // var arr2 = ["广州","深圳","桂林","韶关"];
+    // for (index in arr2){ //index是我们自定义的变量，代表的是循环中每一个成员的下标索引
+    //     console.log(index, arr2[index]);
+    // }
+
+    // *   行号*2-1   1*2 -1
+    //***  行号*2-1   2*2 -1
+    //*****           3*2-1
+
+    var max = 3;
+    for (var i = 1; i <= max; i++) {
+        str = "";
+        for (var k = 1; k <= i * 2 - 1; k++) {
+            str += "*";
+        }
+        console.log(str)
+    }
+
+    var max = 4;
+    for (var i =1; i<= max; i++){
+        str = "";
+        for (var k = 1; k<=i*2 -1; k++){
+            str += "*";
+        }
+        console.log(str)
+    }
+
+    var max = 5;
+    for (var i =1; i<= max; i++){
+        str = "";
+        for (var k = 1; k<=i*2 -1; k++){
+            str += "*";
+        }
+        console.log(str)
+    }
+
+</script>
+</body>
+</html>
