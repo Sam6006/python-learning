@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //函数，就是一段具有功能性的代码段
+    /*
+    * 函数的声明有三种
+    * 1.普通函数
+    * function 函数名(参数1，参数2，...){
+    *       函数代表的代码段
+    *       return '函数结果'
+    * }
+        2.匿名函数
+        * var 变量名 = function(参数1，参数2,.....){
+    *       函数代表的代码段
+    *       return '函数结果'
+        *
+        * }
+        *
+        *
+        3.匿名函数(箭头函数）
+        * var 变量名 = (参数1，参数2,...)=>{
+            // 函数代表的代码段
+            return "函数结果"
+        * }
+        *
+        * //调用函数,不管上面三种声明方式不同，调用方式是一模一样的
+        * var 变量名 = 函数名(参数1,参数2,...)
+ */
+    // function show() {
+    //     alert('函数内部的代码')
+    // }
+    // var show = function () {
+    //     alert('函数内部的代码')
+    // };
+    //
+    // var show = () =>{
+    //     alert('函数内部的代码')
+    // }
+
+    // function paint(max=3) {
+    //     for (var i =1; i<= max; i++){
+    //         str = "";
+    //         for (var k = 1; k<=i*2 -1; k++){
+    //             str += "*";
+    //         }
+    //         console.log(str)
+    //     }
+    // }
+    // paint(5); //如果没有默认参数，可以不填写
+    //
+    // var add = (num1,num2)=>{
+    //     return num1 + num2
+    // };
+    //
+    // var ret = add(10, 5);
+    // console.log(ret)
+
+    //函数中的arguments参数
+    function add(a,b,c) {
+        console.log(a + b + c);
+        console.log(arguments.length)
+    }
+    add(1,2,3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
