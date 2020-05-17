@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //作用域： 指代一个变量从声明到被内存回收这段生命周期里的使用有效使用范围
+    //变量根据声明一般分两种：
+        //全局变量:使用var 关键字或者不使用var 直接声明的变量就是全局变量
+        //全局变量的使用范围：全局通用
+    /*var num1 = 200;
+    num2 = 100;
+    function func() {
+        console.log(`函数中:num1=${num1}`);
+        console.log(`函数中:num2=${num2}`);
+        num1 += 100
+    }
+    func();
+    console.log(`num1=${num1}`);
+    console.log(`num2=${num2}`);
+    */
+    //局部变量:在函数，对象方法，语句中使用let声明的变是局部变量
+    //局部变量：只能在当前函数、对象方法、语句执行过程中使用，或者它们的子语句中
+    // function func1() {
+    //     //局部变量
+    //     let num1 = 100;
+    //     console.log(`函数func1中：num1=${num1}`);
+    //     //函数的子语句中可以使用
+    //     function func2() {
+    //         console.log(`函数func2中：num1=${num1}`)
+    //     }
+    //     func2()
+    // }
+    // func1();
+    // //console.log(`函数外部:num1=${num1}`) num1 is not defined
+    //
+    // for (let i = 1; i<=5; i++){ //这里的i是局部变量
+    //     console.log(i)
+    // }
+    //console.log(i)
+
+
+    //闭合函数/入口函数， 让程序处于一个局部范围内
+    //避免多人协同开发时，因为全局变量导致的变量数据污染
+    (function () {
+        var num = 200
+    })();
+
+    //console.log(num)
+
+
+</script>
+
+</body>
+</html>
