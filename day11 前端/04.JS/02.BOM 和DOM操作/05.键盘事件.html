@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h1 id="ele">大标题</h1>
+
+
+<script>
+    var h1 = document.getElementById('ele');
+    // h1.onclick
+    // h1.ondblclick
+    // h1.ondblclick = function () {
+    //     alert(h1.innerHTML)
+    // }
+
+    // h1.onmouseover = function () {
+    //     h1.style.color = 'red';
+    // };
+    // h1.onmouseout = function () {
+    //     h1.style.color = '#000';
+    // };
+    h1.onmousedown = function () {
+        h1.style.color = '#f00';
+    };
+    h1.onmouseup = function () {
+        h1.style.color = '#000';
+    };
+
+
+</script>
+</body>
+</html>

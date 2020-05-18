@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box" class="p1" name="d1"></div>
+<div class="p1" name="d1"></div>
+
+<script>
+    //DOM document object model  文档对象模型
+    //提供了一系列操作文档的方法和属性
+    // console.log(document);
+    // document.write("<h1>大标题</h1>")
+
+    //提供了6种直接获取元素的方式
+    //1. 通过元素的id属性值获取元素
+
+    // var box = document.getElementById('box');
+    // console.log(box);
+    // //修改元素的内容
+    // box.innerHTML = 'hello';
+    // //修改元素的css样式
+    // box.style.backgroundColor = 'blue';
+    // box.style.color = '#fff';
+    // box.style.fontSize = '22px'
+
+    //2.通过元素的class属性值获取元素，返回值是我个元素的集合【类似数组的对象，我们可以使用数组的方式操作】
+    //var box_lst = document.getElementsByClassName('p1');
+    //获取集合中的成员
+    //box2 = box_lst[0];
+    //console.log(box2);
+    //box2.style.backgroundColor = 'blue';
+
+    //3. 通过元素的标签名 tagName来获取元素，返回值是多个元素的集合
+    /*
+    var box_lst = document.getElementsByTagName('div');
+    console.log(box_lst);
+    var box3 = box_lst[0];
+    console.log(box3);
+    box3.style.backgroundColor = 'orange'; */
+
+    //4.通过元素的name属性值来获取元素，返回值是多个元素的集合[标签里面编写name属性一般只是表单里面的标签]
+    /*var box_lst = document.getElementsByName('d1');
+    console.log(box_lst);
+    var box4 = box_lst[0];
+    console.log(box4);
+    box4.style.backgroundColor = 'gray';*/
+
+    //5. 通过document的子方法querySelector() 来获取一个指定css选择符的元素
+    var box5 = document.querySelector('#box');
+    console.log(box5);
+    box5.style.backgroundColor = 'gray';
+
+    //6.通过document的子方法querySelectorAll()  返回值是多个元素的集合
+    /*var box_lst = document.querySelectorAll('.p1');
+    console.log(box_lst);
+    for (index in box_lst){
+        console.log(box_lst[index]);
+        box_lst[index].style.backgroundColor = "red";
+        box_lst[index].style.marginLeft = '20px';
+        box_lst[index].style.marginTop = '20px';
+        box_lst[index].style.width = '150px';
+        box_lst[index].style.height = '150px';
+
+    }
+    */
+
+</script>
+</body>
+</html>

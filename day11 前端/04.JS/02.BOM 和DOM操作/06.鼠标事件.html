@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+
+
+<script>
+    var box = document.getElementsByClassName('box')[0];
+    var top = 10;
+    var left = 10;
+    document.onkeydown = function () {
+        left += 10;
+        box.style.left = left +"px"
+    }
+    document.onkeyup = function () {
+        left = 10;
+        box.style.left = left +"px"
+    }
+
+
+</script>
+</body>
+</html>

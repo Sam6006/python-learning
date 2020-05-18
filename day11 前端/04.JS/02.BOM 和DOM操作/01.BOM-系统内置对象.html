@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //BOM browser object model 浏览器对象模型
+    //console.log(window) //当前浏览器的页面窗口;
+    // console.log(window.innerHeight); //窗口高度
+    // console.log(window.innerWidth); //窗口宽度
+
+    //console.log(window.open("http://www.baidu.com")) //打开一个新的浏览器窗口
+    //console.log(window.close())
+
+    //获取地址栏对象 location
+    //console.log(location);
+    // console.log(location.href) //获取完整地址
+    // console.log(location.search) //获取查询字符串
+    // console.log(location.host) //域名：端口
+    // console.log(location.hostname) //域名
+    // console.log(location.port) //端口
+
+    //location 一些方法给我们
+    //location.assign('新网页地址')
+    //location.assign("http://www.baidu.com")
+
+    //刷新当前页面
+    //location.reload()
+
+    //浏览器对象
+    // console.log(navigator)
+    //console.log(navigator.appVersion) // 查看浏览器内核信息
+
+    //浏览器历史对象 history
+    // console.log(history)
+    // console.log(history.length)
+    // console.log(history.back()) // 返回上一页
+    // console.log(history.forward()) // 返回下一页
+    // console.log( history.go(1) )// 参数为正数,则表示前往指定数量的页面,如果参数为负数,则表示返回指定数量的页面
+
+    //window 下面还提供了定时器，让我们可以设置定时执行指定函数的代码
+    //定时多次   var 定时器序号 = setInterval(函数名， 间隔时间(毫秒))
+    //定时一次   var 定时器序号 = setTimeout(函数名， 间隔时间(毫秒))
+
+    // 取消定时器
+    // clearInterval(定时器序号)
+    // clearTimeout(定时器序号)
+
+    // function func() {
+    //     alert(1)
+    // }
+    // setTimeout(func, 5000)
+    //
+    // function func2() {
+    //     let date = new Date()
+    //     console.log(date-0)
+    // }
+    // setInterval(func2, 1000)
+
+    //定时器的第一个参数除了写函数名以外，也可以写匿名函数
+    var timer = 10;
+    var t = setInterval(()=>{
+        if (timer<=1){
+            //location.assign("http://www.baidu.com")
+            location.href = "http://www.baidu.com";
+            clearInterval(t) //取消关闭定时器
+        }else{
+            timer--;
+            console.log(timer)
+        }
+    },1000)
+
+
+</script>
+
+</body>
+</html>
