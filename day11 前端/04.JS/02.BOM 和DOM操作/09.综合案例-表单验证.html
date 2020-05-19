@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        form label{
+            display: block;
+            width: 270px;
+            position: relative;
+        }
+        form label input[type=text],
+        form label input[type=password]{
+            width: 250px;
+            height: 34px;
+            line-height: 42px;
+            border-radius: 3px;
+            margin: 8px 0px;
+            padding: 4px;
+            outline: none;
+        }
+        form label .eye{
+            width: 44px;
+            height: 36px;
+            display: block;
+            background: url("./eye-close.png");
+            position: absolute;
+            top: 0;
+            right: 10px;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <label for=""><input type="text" name="nickname" placeholder="昵称"><span id="nickname_tips"></span></label>
+    <label for=""><input type="text" name="username" placeholder="账号"><span id="username_tips"></span></label>
+    <label for=""><input type="password" name="password" placeholder="密码"><span class="eye"></span></label>
+    <label for=""><input type="submit"  value="注册"></label>
+
+</form>
+
+
+<script>
+    //实现 昵称框如果获取焦点时，让边框变色
+    var nickname = document.getElementsByName('nickname')[0];
+    var nickname_tips = document.getElementById('nickname_tips');
+    nickname.onfocus = function () {
+        nickname.style.border = '1px solid #66f';
+    };
+    nickname.onblur = function () {
+        if (nickname.value == ''){
+            nickname.style.border = '1px solid #f66';
+            nickname_tips.innerHTML = '昵称不能为空！';
+        }else{
+            nickname.style.border = '1px solid #999';
+            nickname_tips.innerHTML = "";
+        }
+    };
+    //账号框长度必须是4-8位
+    var username = document.getElementsByName('username')[0];
+    var username_tips = document.getElementById('username_tips');
+    username.onfocus = function () {
+        username.style.border = '1px solid #f66';
+    };
+    username.onblur = function () {
+        //使用正则匹配内容
+        var ret = /^[\da-zA-Z_]{4,8}$/.test(username.value);
+        if (!ret){
+            username.style.border="1px solid #f66"
+            username_tips.innerHTML = "账号必须在4-8个字符之间!"
+        }else{
+            username.style.border = '1px solid #999';
+            username_tips.innerHTML = "";
+        }
+
+    };
+    
+    //密码查看效果
+    password = document.querySelector('form label input[name=password]');
+    eye = document.getElementsByClassName('eye')[0];
+    eye.onmousedown = function () {
+        eye.style.background = `url("./eye.png")`;
+        password.type = 'text';
+    };
+    eye.onmouseup = function () {
+        eye.style.background = `url("./eye-close.png")`;
+        password.type = 'password';
+    }
+</script>
+</body>
+</html>
