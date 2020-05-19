@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script> <!--jQ引入-->
+</head>
+<body>
+<h1 id="h1">大标题</h1>
+<p class="p1">一个段落</p>
+<script>
+    //原生js
+    var ele = document.getElementById('h1');
+    console.log(ele);
+    console.log(ele.innerHTML);
+
+    //jQ封装写法，本质上就是上面的简写，document.querySelector
+    var ele = $("#h1"); //jQuery获取元素返回的是一个元素集合，是一个类数组
+    console.log(ele.html()); // 相当于ele[0].innerHTML
+
+    var ele = $('.p1');
+    console.log(ele.html());
+
+    //通过$()可以使用css选择符获取1个或多个html元素，返回一个jQuery类数组
+    //通过jQuery类数组对象，可以直接调用html()来获取一个元素的内容
+</script>
+
+</body>
+</html>

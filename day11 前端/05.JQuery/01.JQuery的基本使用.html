@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script> <!--jQ引入-->
+</head>
+<body>
+
+<script>
+    // 官网：https://jquery.com/
+    // 手册: https://www.jq22.com/chm/jquery/index.html
+    //console.log(jQuery);
+    //console.log($)
+
+    // window.onload = () =>{
+    //     var ele = document.getElementById('h1');
+    //     console.log(ele.innerHTML);
+    // };
+    //window.onload 只能使用一次
+    // window.onload = ()=>{
+    //     var ele = document.getElementById("h1");
+    //     alert( ele.innerHTML );
+    // }
+
+    //可以使用jQuery来避免onload事件的绑定冲突问题
+    //入口函数[页面加载函数]
+    // $(document).ready(()=>{
+    //     var ele = document.getElementById('h1');
+    //     alert(ele.innerHTML);
+    // });
+    // $(document).ready(()=>{
+    //     var ele = document.getElementById('h1');
+    //     console.log(ele.innerHTML);
+    // });
+
+    //入口函数可以简写
+    $(()=>{
+        var ele = document.getElementById('h1');
+        console.log(ele.innerHTML);
+    });
+    $(()=>{
+        var ele = document.getElementById('h1');
+        alert(ele.innerHTML);
+    })
+
+</script>
+<h1 id="h1">大标题</h1>
+</body>
+</html>
