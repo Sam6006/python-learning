@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// // 字符串是js中提供给我们操作字符串用的。这里面所有的属性和方法，都可以在任何字符串中直接调用
+    // var str1 = "hello"
+    // // 字符串拼接
+    // console.log( str1 + " world" );
+    // // 通过字符串的下标[索引、键]进行获取单个字符
+    // // 下标从左往右，逐一递增，从0开始
+    // console.log( str1[1] )
+    // // 获取字符串的长度
+    // console.log( str1.length );
+    //
+    // // indexOf 返回某个指定的字符串值在字符串中首次出现的位置。
+    // // lastIndexOf 返回某个指定的字符串值在字符串中最后一次出现的位置。
+    // var str2 = "hello world"
+    // console.log( str2.indexOf("o") ) // 4
+    // console.log( str2.lastIndexOf("o") ) // 7
+
+    // replace 正则匹配字符
+    // var str2 = `<a class="link" name="author" href="http://www.badiu.com">百度搜一搜</a><div><a title="京东" href="http://www.jd.com">京东</a></div>`
+    // var ret = str2.match(/<a.*?href="(.*?)".*?>.*?<\/a>/);
+    // console.log(ret)
+
+    // replace 正则替换字符
+    // var str3 = "www.www.com";
+    // var ret = str3.replace("www", "mmm");
+    // console.log(ret);
+
+    // split() 正则分割,常用于把字符串转换成数组
+    // var str4 = "www.www.com";
+    // var ret = str4.split(".")
+    // console.log(ret);
+
+    // slice() 字符串切片
+    // var str5 = "hello world";
+    // // var ret = str5.slice(0, 4);  // [0,4] 开区间
+    // // console.log(ret) // hell
+    //
+    // var ret = str5.slice(0, -4);
+    // console.log(ret) // hello w
+
+
+    // trim 去除字符串两边空白
+    var str6 = " hello ";
+    console.log(str6.length);
+    var ret = str6.trim();
+    console.log(ret.length);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 数组
+    // 数组合并
+    // var arr1 = [1,2,3], arr2 = [4,5,6];
+    // var ret = arr1.concat(arr2);
+    // console.log(ret);  //  [1, 2, 3, 4, 5, 6]
+
+
+    // find 获取数组中符合函数条件的第一个元素
+    // var arr3 = [3, 13, 100, 60, 56];
+    // var func = (num)=>{
+    //     return num >=50;
+    // };
+    //
+    // var ret = arr3.find(func);
+    // console.log(ret);
+
+    // forEach 遍历数组
+    // var arr4 = ["G","A","B","C","E"];
+    // for(item in arr4){
+    //     console.log(item, arr4[item]); // 下标
+    // }
+
+    // var arr4 = ["G","A","B","C","E"];
+    // arr4.forEach((value, key)=>{
+    //     console.log(key,value);
+    // });
+    //
+    // // map
+    // var arr1 = [1,2,3];
+    // var ret = arr1.map(function(e){
+    //     return e**2;
+    // });
+    //
+    // console.log(ret); // [1, 4, 9]
+
+    // 通过指定字符串，完成数组成员之间的拼接，数组转换成字符串
+    // var add1 = ["广东省","深圳市","南山区"];
+    // var ret = add1.join("-");
+    // console.log(ret); // 广东省-深圳市-南山区
+
+    // 追加成员
+    // var arr1 = [1,2,3];
+    // arr1.push(5)
+    // console.log(arr1 ) //  [1, 2, 3, 5]
+
+    // reverse 反转
+    // var arr1 = [1,2,3];
+    // arr1.reverse();
+    // console.log(arr1); //  [3, 2, 1]
+
+    // slice 数组切片
+    // var arr1 = [1,2,3];
+    // var ret = arr1.slice(0,2);
+    // console.log(ret);
+
+    // sort 排序
+    // var arr1 = [1,3,2,"2","10"];
+    // arr1.sort()
+    // console.log( arr1 ); //  [1, "10", 2, "2", 3]
+
+    // // 数值升序
+    // var asc = (a,b)=>{
+    //     return a-b;
+    // };
+    //  // 数值降序
+    // var desc = (a,b)=>{
+    //     return b-a;
+    // };
+    //
+    // var arr1 = [1,"20",3,"2",4,"103"];
+    // var arr2 = [1,"20",3,"2",4,"103"];
+    // arr1.sort(asc);
+    // arr2.sort(desc);
+    //
+    // console.log(arr1);
+    // console.log(arr2);
+
+    var ary=[1,2,3,4,5,6,7,8];
+    function shuffle(arr) {
+        arr.sort(function () {
+            return Math.random() - 0.5;
+        });
+    }
+    shuffle(ary);
+    console.log(ary);
+
+
+    // 日期对象
+    // 获取当前时间戳[毫秒]的日期对象
+    var date = new Date();
+    console.log(date - 0 );
+
+    // 获取指定时间格式对应的日期对象
+    // var date = new Date("1990/01/01 13:26:30");  // 苹果系统的浏览器或者app 1990/01/01 13:26:30，建议使用横杠
+    // console.log( date - 0 );
+
+    // 提取日期中，年月日周时分秒
+    var date = new Date();
+    console.log( date.getFullYear() ); // 年
+    console.log( date.getMonth()+1 ); // 月
+    console.log( date.getDate() ); // 日
+    console.log( date.getDay() ); // 0表示 周日
+    console.log( date.getHours() ); // 时
+    console.log( date.getMinutes() ); // 分
+    console.log( date.getSeconds() ); // 秒
+
+    // 提取时间的格式化
+    console.log( date.toLocaleDateString() ); // 2019/10/20
+    console.log( date.toLocaleString() ); // 2019/10/20 下午12:21:07
+</script>
+</body>
+</html>

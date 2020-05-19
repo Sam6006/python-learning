@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 数学对象 Math
+    console.log( Math.PI );    // 圆周率
+    var ret1 = Math.round(3.6); // 四舍五入
+    var ret2 = Math.ceil(3.1);  // 向上取整[进一取整]
+    var ret3 = Math.floor(3.8); // 向下取整
+
+
+    // 随机数
+    console.log( Math.random() ); // 随机生成0-1之间的数值
+    // 随机生成 100~200
+    console.log( 100 + Math.round(Math.random()*100) );
+
+
+    // 数值对象
+    // 保留指定位数的小数位 toFixed(x)
+    var ret = 7.1+0.8
+    console.log( ret.toFixed(2) )
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // // 普通对象,
+    // var obj = {
+    //     age: 20,
+    //     func(){
+    //         alert("func");
+    //     }
+    // }; // var obj = new Object()
+    // console.log( obj )
+    //
+    // // 添加属性
+    // obj.username = "小名"
+    // console.log(obj);
+    // // 对象的属性
+    // console.log( obj.username );
+    //
+    // // 添加方法
+    // obj.func2 = ()=>{
+    //     alert("func2");
+    // }
+    //
+    // // 调用对象的方法
+    // obj.func();
+    // obj.func2();
+    //
+    // // 关于js中如果对象进行赋值, 则是一种引用关系
+    // var t = obj
+    // console.log(t); // t只是代表了一个内存地址，所以操作t的时候，还是操作了obj
+    // console.log( t.username )
+    //
+    // t.username = "小红"
+    // console.log( obj ); // 可以看到t修改了username，obj的username也被修改了.
+
+    // 克隆对象，如果希望真的复制一个对象出来，不要使用赋值，而是直接克隆
+    // var t1 = Object.assign({},obj); // 使用assign
+    // var t1 = Object.assign(obj);
+    // console.log(t1);
+    // t1.username ="xiaohong";
+    // console.log(obj);
+    // console.log(t1);
+
+    // 和python的self一样,在js中对象的方法里面,也存在一个伪变量this,代表当前对象
+    // var obj2 = {
+    //     username:"小灰灰",
+    //     desc(){
+    //         return `我叫${this.username}`; // this表示当前对象 ; this.username 代表了当前对象的username属性值
+    //     }
+    // };
+    //
+    // console.log( obj2.desc() );
+
+
+    // 在js中还有一种特殊的对象,就是json对象
+    // json对象一般而言,用于保存数据的,也就是这个对象只存在属性,不存在方法.
+    // 保存的数据,将来是发送给别的平台或者别的语言的.
+
+    var obj3 = {
+        age: 13,
+        username: "小名"
+    };
+
+    console.log(obj3);
+
+    // json, 全称叫 javascript 对象表示法,表示使用json格式的语法来保存数据
+    // 语法: json中,都是使用花括号或者中括号来包住数据
+    // 成员之间使用逗号隔开,
+    // 内部内部只能是数据,不能是对象的操作方法,而且数据类型只有, json对象，数组，双引号的字符串, 数值[整数,小数和浮点数和布尔值]
+    // 属性只能是数值或者字符串,字符串必须是双引号的
+
+    var data = [
+        {"id":1,"title":"我爱python","price":"100"},
+        {"id":1,"title":"我爱python","price":"100"},
+        {"id":1,"title":"我爱python","price":"100"},
+        {"id":1,"title":"我爱python","price":"100"},
+    ];
+    console.log(data);
+
+    // 在js中,系统提供了JSON对象给我们操作json数据
+    // JSON.parse()   把字符串格式的json数据转成json对象
+    // JSON.stringify() // 把json对象转换字符串格式的json数据
+    var json_str = JSON.stringify(data);
+    console.log(json_str);
+
+    var data2 = JSON.parse(json_str);
+    console.log(data2);
+
+</script>
+</body>
+</html>
