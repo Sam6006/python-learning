@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <label for=""><input type="text" name="nickname" placeholder="昵称"><span id="nickname_tips"></span></label><br>
+    <label for=""><input type="text" name="username" placeholder="账号"><span id="username_tips"></span></label><br>
+    <label for=""><input type="password" name="password" placeholder="密码"><span class="eye"></span></label><br><br>
+    <select name="address">
+        <option value="guangzhou">广州</option>
+        <option value="shenzhen">深圳</option>
+        <option value="beijing">北京</option>
+    </select><br>
+    性别: <label for=""><input type="radio" name="sex" value="0">男</label>
+          <label for=""><input type="radio" name="sex" value="1">女</label><br>
+    个人签名: <br>
+        <textarea name="desc" id="" cols="30" rows="10"></textarea><br>
+    <label for=""><input type="submit" value="注册"></label>
+
+    <script>
+    /*  js原生                            jQ封装过的
+     *  ele.onclick=function(){           $(ele).click(function(){
+     *      // 事件操作代码                    // 事件操作代码
+     *  }                                 })
+     */
+    $('input[type=submit]').click(function () {
+        //获取表单元素的值
+        // console.log($("input[name=nickname]").val());
+        // console.log($("input[name=username]").val());
+        // console.log($("input[name=password]").val());
+        // console.log($("select[name=address]").val());
+        // console.log($("input[name=sex]:checked").val());
+        // console.log($("textarea[name=desc]").val());
+
+        //val() 的操作类似于html()方法，也可以进行修改或者传入匿名函数在循环中处理值
+        //$('textarea[name=desc]').val('hello')
+
+        //清空值，传入一个空的字符串
+        //$('textarea[name=desc]').val('');
+
+        //组织标签的默认行为，在事件中使用return false;
+        return false
+    });
+
+
+
+    </script>
+
+</body>
+</html>

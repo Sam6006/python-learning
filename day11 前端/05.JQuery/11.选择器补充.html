@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //
+    // 1/属性选择器：
+    /*
+    [attribute]
+    [attribute=value]// 属性等于
+    [attribute!=value]// 属性不等于
+
+    例子
+    <input type="text">
+    <input type="password">
+    <input type="checkbox">
+    $("input[type='checkbox']");// 取到checkbox类型的input标签
+    $("input[type!='text']");// 取到类型不是text的input标签
+
+    2.表单筛选器：
+        :text
+        :password
+        :file
+        :radio
+        :checkbox
+
+        :submit
+        :reset
+        :button
+
+    例子
+    $(":checkbox")  // 找到所有的checkbox
+
+    3.表单对象属性
+        :enabled
+        :disabled
+        :checked
+        :selected
+
+    <form>
+      <input name="email" disabled="disabled" />
+      <input name="id" />
+    </form>
+
+    $("input:enabled")  // 找到可用的input标签
+
+    <select id="s1">
+          <option value="beijing">北京市</option>
+          <option value="shanghai">上海市</option>
+          <option selected value="guangzhou">广州市</option>
+          <option value="shenzhen">深圳市</option>
+    </select>
+
+        $(":selected")  // 找到所有被选中的option
+
+    4.筛选器方法
+    下一个元素
+        $('#id').next()
+        $('#id').nextAll()
+        $('#id').nextUntil()
+
+    上一个元素
+        $("#id").prev()
+        $("#id").prevAll()
+        $("#id").prevUntil("#i2")
+
+    5.父亲元素
+        $("#id").parent()
+        $("#id").parents()  // 查找当前元素的所有的父辈元素
+        $("#id").parentsUntil() // 查找当前元素的所有的父辈元素，直到遇到匹配的那个元素为止。
+    6.儿子和兄弟元素：
+        $("#id").children();// 儿子们
+        $("#id").siblings();// 兄弟们
+
+    7.查找
+        搜索所有与指定表达式匹配的元素。这个函数是找出正在处理的元素的后代元素的好方法。
+        $('div').find('p')  等价于$("div p")
+
+    8.筛选
+        筛选出与指定表达式匹配的元素集合。这个方法用于缩小匹配的范围。用逗号分隔多个表达式。
+        $("div").filter(".c1")  // 从结果集中过滤出有c1样式类的 等价于 $("div.c1")
+        .first() // 获取匹配的第一个元素
+        .last() // 获取匹配的最后一个元素
+        .not() // 从匹配元素的集合中删除与指定表达式匹配的元素
+        .has() // 保留包含特定后代的元素，去掉那些不含有指定后代的元素。
+        .eq() // 索引值等于指定值的元素
+
+
+
+    */
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

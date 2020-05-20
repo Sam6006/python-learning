@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+    <style>
+        .box{
+            width: 200px;
+            background: #000;
+
+        }
+        .box1{
+            background: #999;
+        }
+        .box2{
+            background: #99f;
+        }
+    </style>
+</head>
+<body>
+<div class="box" style="height: 100px"></div>
+
+<script>
+    //js原生获取样式值
+    var ele = document.getElementsByClassName('box')[0];
+    console.log(ele.style.height); //只能获取行间样式
+    console.log(window.getComputedStyle(ele)['height']); // 获取元素的内部或者外部样式
+
+    //css获取指定样式值
+    console.log($('.box').css('width')); // css样式值[宽度]
+    console.log($('.box').width()); // 数值的宽度
+
+    console.log($('.box').css('height')); // css样式值[高度]
+    console.log($('.box').height()); // 数值的高度
+
+    console.log($('.box').css('background-color')); //颜色 rgb(0, 0, 0)
+
+
+    //css 操作指定样式
+    // $('.box').css('border', '1px solid #f99').css('background-color', "#9f9");
+    //$('.box').css('border', '2px solid #ff9').css('background-color', "#666")
+    //也可以类似html()方式一样，可以在传递函数，再循环中控制样式的值
+
+    //通过控制class值来修改样式
+    $('.box').addClass('box1 box2'); // 添加class ，这种添加是属于追加
+    $('.box').removeClass('box1 box2'); // 删除class
+    // hasClass();// 判断样式存不存在
+    // toggleClass();// 切换CSS类名，如果有就移除，如果没有就添加。
+    $('.box').toggleClass('box1 box2');
+</script>
+</body>
+</html>

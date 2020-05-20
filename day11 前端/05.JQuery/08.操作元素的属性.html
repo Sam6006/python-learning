@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+</head>
+<body>
+    <img src="" alt="">
+    <button class="show">显示图片</button>
+    <button class="remo">不显示图片</button>
+    <button class="check">属性操作</button>
+
+    <script>
+        //attr全称attribute(属性)  attr所指的属性是HTML标签属性  attr是显式的
+        $('.show').click(function () {
+            $('img').attr('src', '1.svg')
+        });
+        $('.remo').click(function () {
+            $('img').attr('src', '')
+        });
+
+        //获取元素的属性值
+        $('.check').click(function () {
+            //获取属性值
+            // console.log($('img').attr('src'))
+
+            //操作属性值
+            // $('img').attr('title','这是一张图片');
+            // $('img').attr('title','这是一张图片').attr('alt','图片不见了')
+            $('img').attr({'title':'这是一张图片', 'alt':'图片消失了', 'class':'p1'})
+            // 也可以传递函数进去，跟html方法类似
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li id="four">4</li>
+    <li>5</li>
+    <li>6</li>
+    <li class="last1">7</li>
+    <li class="last1">8</li>
+</ul>
+<p>saaaa</p>
+
+
+<script>
+    //获取id元素
+    //console.log($('#four').html());
+
+    //获取class元素
+    // console.log($('.last1'));
+    // console.log($('.last1').html()); //获取第一个class元素的html文本)
+    // console.log($('.last1').css('background-color', '#99f')); // 操作元素的时候是循环的，在读取信息时是提取第一个
+
+    //获取标签元素
+    //console.log($('li'));
+
+    //配合使用
+    //console.log($('li.last1').html()); //找到有lats1 class类的li标签
+
+    //所有元素选择器
+    // console.log($('*'));
+
+    //组合选择器
+    // console.log($('#id, .last1, p'))
+
+    //层级选择器
+    //x和y可以为任意选择器
+    // $("x y");// x的所有后代y（子子孙孙）
+    //console.log($('ul li'))
+    // $("x > y");// x的所有儿子y（儿子）
+    //console.log($('ul>li'))
+    // $("x + y")// 找到所有紧挨在x后面的y
+    //console.log($('#four + li').html());
+    // $("x ~ y")// x之后所有的兄弟y
+    //console.log($('#four ~ .last1').css('background-color', 'red'))
+
+    //基本选择器
+    //获取第一个
+    //console.log($('li:first').css('background-color', 'gray'));
+    //获取最后一个
+    //console.log($('li:last').css('background-color', 'gray'));
+    //获取指定下标对应的元素0开始
+    //console.log($('li:eq(4)').css('background-color', 'gray'));
+    //  :even  匹配所有索引值为偶数的元素，从 0 开始计数
+    //console.log($('li:even').css('background-color', 'gray'));
+    // :odd     匹配所有索引值为奇数的元素，从 0 开始计数
+    //console.log($('li:odd').css('background-color', 'blue'));
+    //:gt(index)// 匹配所有大于给定索引值的元素 从 0 开始计数
+    //console.log($('li:gt(3)').css('background-color', 'green'));
+    //:lt(index)// 匹配所有小于给定索引值的元素 从 0 开始计数
+    //console.log($('li:lt(3)').css('background-color', 'gray'));
+    // :not(元素选择器)// 移除所有满足not条件的标签
+    //console.log($('li:not("#four")').css('background-color','gray'));
+    // :has(元素选择器)// 选取所有包含一个或多个标签在其内的标签(指的是从后代元素找)
+    //console.log($("ul:has(#four)"))
+    // $("div:has(h1)")// 找到所有后代中有h1标签的div标签
+    // $("div:has(.c1)")// 找到所有后代中有c1样式类的div标签
+    // $("li:not(.c1)")// 找到所有不包含c1样式类的li标签
+    // $("li:not(:has(a))")// 找到所有后代中不含a标签的li标签
+
+    //除了通过css选择符直接获取元素以外，jQuery还支持我欠在获取元素以后，依靠元素之间的嵌套和并列关系来获取其他元素
+    //console.log($('#four').next().html()); //获取下一个元素
+    //console.log($('#four').prev().html()); //获取上一个元素
+
+    console.log($('#four').siblings());  //获取所有兄弟元素
+    console.log( $('html').children());  //获取html标签的所有子元素
+</script>
+</body>
+</html>

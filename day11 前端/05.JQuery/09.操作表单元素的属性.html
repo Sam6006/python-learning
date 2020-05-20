@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+</head>
+<body>
+<ul>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+    <li><input type="checkbox" name="lve"></li>
+
+</ul>
+<input type="button" name="selectAll" value="全选">
+<input type="button" name="unselect" value="全不选">
+<input type="button" name="reverse" value="反选">
+<script>
+    //prop全称property(属性) prop所指的是DOM对象属性，prop是隐式的
+    //实现全选
+    $('input[name=selectAll]').click(function () {
+        $('ul li input').prop('checked',true)
+    });
+    $('input[name=unselect]').click(function () {
+        $('ul li input').prop('checked',false)
+    });
+    //实现反选
+    $('input[name=reverse]').click(function () {
+        $('ul li input').prop('checked',function () {
+            return !$(this).prop('checked')
+        });
+    });
+
+
+
+/*总结一下：
+对于标签上有的能看到的属性和自定义属性都用attr
+对于返回布尔值的比如checkbox、radio和option的是否被选中都用prop。*/
+
+
+</script>
+</body>
+</html>
