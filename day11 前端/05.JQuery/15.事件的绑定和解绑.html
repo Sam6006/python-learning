@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+</head>
+<body>
+<div class="bind">绑定</div>
+<div class="unbind">解绑</div>
+
+<script>
+    //使用on绑定事件
+    //$('元素').on(事件名，委托对象，事件对应的匿名函数)
+    $('.bind').on('click', function () {
+        console.log( $(this).html())
+    });
+
+    //使用off解绑事件
+    $('.unbind').on('click',function () {
+        $('.bind').off('click');
+    })
+
+
+    /*
+    // on 还有一个特殊用法,要了解这种特殊用法,我们需要先了解一个关于事件的基本概念-事件绑定
+    // 16.html
+```javascript
+# js原生                            jQ封装过的
+ele.onclick=function(){           $(ele).click(function(){
+      // 事件操作代码                    // 事件操作代码
+}                                 })
+
+```
+
+在jQuery中, 针对js原生的各种事件,都进行封装,改成了函数方法提供给我们使用.
+
+改良的点有两处:
+html
+1. 原生js中,事件绑定,如果重复对一个元素的同一个事件绑定,后面的覆盖前面的.
+   在jQuery中,事件绑定,可以对一个元素绑定多次操作.jQuery会有一个队列进行逐个执行
+
+2. 在jQuery中绑定事件以后, 可以使用JQuery提供的方法还可以进行解绑操作.而在js中操作复杂.还可以提供一些模拟事件操作
+    * */
+
+    /*
+    *常事件
+    javascript
+    blur([[data],fn])    # 失去焦点
+    change([[data],fn])  # select值改变事件
+    click([[data],fn])   # 点击事件
+    dblclick([[data],fn])  # 双击事件
+    error([[data],fn])   # 图片/资源加载错误事件
+    focus([[data],fn])   # 获取焦点事件
+    keydown([[data],fn]) # 键盘按下
+    keyup([[data],fn])   # 键盘松开
+    mousedown([[data],fn])  # 鼠标在元素上方按下
+    mousemove([[data],fn])  # 鼠标在元素上方移动
+    mouseout([[data],fn])   # 鼠标离开元素上方
+    mouseover([[data],fn])  # 鼠标在元素上方停留
+    mouseup([[data],fn])    # 鼠标在元素上方松开
+    size([[data],fn])     # 浏览器窗口改变大小
+    scroll([[data],fn])     # 窗口滚动条滚动事件
+    select([[data],fn])     # 文本选择事件
+    submit([[data],fn])     # 表单提交事件
+    unload([[data],fn])     # 离开页面事件
+
+
+    on  绑定事件
+    off 解绑事件
+    hover 组合事件,是鼠标悬放和离开的组合
+    * */
+</script>
+</body>
+</html>

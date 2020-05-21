@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+
+<script>
+    $('.box').hover(function () {
+        //鼠标悬放在元素上方的效果
+        $(this).css('background-color', '#f66').css('width', '200px');
+    },function () {
+        //鼠标离开元素上方的效果
+        $(this).css('background-color', '#000').css('width', '100px');
+    })
+</script>
+</body>
+</html>

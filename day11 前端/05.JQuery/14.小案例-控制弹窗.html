@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+    <style>
+        .opacity{
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            opacity: 0.3;
+            display: none;
+        }
+        .opacity .box{
+            width: 420px;
+            height: 250px;
+            background: #fff;
+            border-radius: 4px;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+
+
+        }
+        .opacity .box .close{
+            position: absolute;
+            right: 5px;
+            top: 0;
+            font-size: 25px;
+
+        }
+        .show{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<span id="login">登录</span>
+<div class="opacity">
+    <div class="box">
+        <span class="close">x</span>
+    </div>
+</div>
+<script>
+    $('#login, .close').click(function () {
+        //toggleClass 自动判断是否在当前标签拥有这个样式，有则删，无则加
+        $('.opacity').toggleClass('show');
+    })
+</script>
+
+</body>
+</html>

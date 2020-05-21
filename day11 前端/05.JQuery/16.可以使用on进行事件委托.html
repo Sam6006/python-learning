@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+</head>
+<body>
+<div class="btn">点击增加li元素</div>
+<ul>
+    <li>111</li>
+</ul>
+<script>
+    let event = 'click';
+
+    //给所有li绑定内容
+    // $('li').click(function () {
+    //     alert($(this).html())
+    // });
+
+    $('ul').on('click', 'li', function () { //把所有li的点击事件，委托给ul进行绑定，在事件触发时,直接找到触发[事件委托li]
+        console.log($(this));
+        console.log($(this).html());
+    });
+
+    $('.btn').on(event, function () {
+        $('ul').append('<li>111111</li>');
+    })
+
+</script>
+</body>
+</html>

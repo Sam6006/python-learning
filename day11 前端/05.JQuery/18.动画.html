@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jQuery/jquery-3.5.1.js"></script>
+    <script src="./jQuery/jquery.color.js"></script>
+
+    <style>
+    .box{
+        width: 100px;
+        height: 100px;
+        background: #000;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+    }
+    </style>
+</head>
+<body>
+<!--<div id="d1">点赞</div>-->
+<button class="btn1">显示</button>
+<button class="btn2">隐藏</button>
+<div class="box"></div>
+<script>
+/*基本
+	show([s,[e],[fn]])
+	hide([s,[e],[fn]])
+滑动
+	slideDown([s],[e],[fn])  // 向下滑动[显示]
+	slideUp([s,[e],[fn]])    // 向上滑动[隐藏]
+
+淡入淡出
+	fadeIn([s],[e],[fn])
+	fadeOut([s],[e],[fn])
+	fadeTo([[s],o,[e],[fn]]) // 改变透明度到指定值
+
+自定义
+	animate(p,[s],[e],[fn])
+	stop([c],[j]) */
+
+
+    //点赞效果
+    // $("#d1").on("click", function () {
+    //     var newI = document.createElement("i");
+    //     newI.innerText = "+1";
+    //     $(this).append(newI);
+    //     $(this).children("i").animate({
+    //       opacity: 0
+    //     }, 1000)
+    // })
+    $('.btn1').on('click', function () {
+        // $('.box').show(2000);  //显示元素
+        // $('.box').stop().slideDown(2000); //向下滑动
+        // $('.box').fadeIn(500);  //淡入
+        //  $(".box").animate("动画效果[把完成效果的css样式写入]","完成动画的时间","动作执行时的效果");
+        $('.box').animate({
+            "width": "100px",
+           " height": "100px",
+            "border-radius": "100px",
+            "left" : "400px",
+            "background-color": "#f99",
+          }, 5000, "swing", function () {
+            //动画完成 后的执行代码
+            $('.box').animate({"left": "20px"}, 3000, "linear")
+        } );
+    });
+
+    $('.btn2').on('click', function () {
+        // $('.box').hide(2000); //元素隐藏
+        // $('.box').stop().slideUp(2000); //向上滑动[隐藏]
+        $('.box').fadeOut(500); //淡出
+    });
+
+
+</script>
+</body>
+</html>
