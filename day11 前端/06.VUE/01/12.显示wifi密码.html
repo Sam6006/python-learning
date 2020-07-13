@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <input :type="type"><button @click="pwd">{{message}}</button>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            type: "password",
+            message: "显示密码"
+        },
+        methods:{
+            pwd(){
+                //如果在vm对象内部的其他方法里面调用data属性，可以直接使用this.变量名来调用data的变量
+                if(this.type === "password"){
+                    this.type = "text";
+                    this.message = "隐藏密码";
+                }else{
+                    this.type = "password";
+                    this.message = "显示密码";
+                }
+            }
+        }
+    });
+
+
+
+
+</script>
+
+</body>
+</html>

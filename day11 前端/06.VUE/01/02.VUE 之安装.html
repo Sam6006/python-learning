@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--第一步导入VUE文件    -->
+    <script src="../static/vue.js"></script>
+</head>
+<!--第四步，输出或者调用data或method里的方法或者数据-->
+<div id="app">{{greeting}}</div>
+
+
+<script>
+    //数据模板引擎
+    //第二步初始化vue对象
+    var vm = new Vue({
+
+        el: "#app", //指定当前vue对象操作的页面内容范围
+        data:{  //第三步声明vue将来要操作的内容或者变量
+            greeting: "Hello Vue",
+        },
+        methods:{  //vue要操作data里面的数据时，封装出的方法
+
+        },
+    })
+</script>
+
+
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+    <link rel="stylesheet" href="../static/todolist.css">
+</head>
+<body>
+	<div class="list_con" id="todolist">
+		<h2>To do list</h2>
+		<input type="text" v-model="text" id="txt1" class="inputtxt">
+		<input type="button" value="增加" id="btn1" class="inputbtn" @click="add">
+
+		<ul id="list" class="list">
+			<!-- javascript:; # 阻止a标签跳转 -->
+			<li v-for="data, key in data_list">
+				<span>{{data}}</span>
+				<a href="javascript:;" class="up" @click="up(key)"> ↑ </a>
+				<a href="javascript:;" class="down" @click="down(key)"> ↓ </a>
+				<a href="javascript:;" class="del" @click="del(key)">删除</a>
+			</li>
+
+		</ul>
+	</div>
+<script>
+    var vm = new Vue({
+        el: '#todolist',
+        data:{
+        	text:'',
+        	data_list:[
+				'学习html',
+				'学习css',
+				'学习js',
+			]
+        },
+		methods:{
+        	add(){
+        		//添加计划
+        		if(this.text === ""){
+        			return false;
+				}
+        		this.data_list.push(this.text);
+				this.text="";
+			},
+			del(key){
+        		//删除计划
+				//数组.splice(开始下标，删除个数，替换内容1，替换内容2，。。。)
+				this.data_list.splice(key,1)
+			},
+			up(key){
+        		//向上移动
+				if(key==0){
+					return false;
+				}
+				let up_data = this.data_list.splice(key,1)[0];
+				this.data_list.splice(key-1,0,up_data)
+
+			},
+			down(key){
+        		//向下移动
+				let down_data = this.data_list.splice(key,1)[0];
+				this.data_list.splice(key+1,0,down_data)
+			},
+		}
+
+    })
+
+</script>
+</body>
+</html>

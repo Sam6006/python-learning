@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <p :style="{color:fontColor, backgroundColor:bg}">hello world</p>
+    <p :style="{color:fontColor, 'background-color':bg}">hello world</p>
+    <p :style="style1">hello world</p>
+    <p :style="[style2,style3]">hello world</p>
+
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            fontColor: 'red',
+            bg: 'yellow',
+            style1:{color:'red', 'background-color': 'yellow'},
+            style2:{
+                color: 'red',
+                backgroundColor: 'yellow',
+            },
+            style3:{
+                border: '3px solid blue',
+            }
+
+        },
+
+    });
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <style>
+        #app{
+            width: 250px;
+            height: 250px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p>一个p标签</p>
+</div>
+<script>
+    var p = document.getElementsByTagName('p')[0];
+    p.onclick = function (event) {
+        alert(100);
+        //阻止冒泡
+        event.stopPropagation();
+
+    };
+    var app = document.getElementById('app');
+    app.onclick = function () {
+        alert(10)
+
+    };
+    var body = document.body;
+    body.onclick = function () {
+        alert(1)
+    }
+</script>
+</body>
+</html>

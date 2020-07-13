@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+	<script src="../static/axios.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <input type="text" v-model="music"><button @click="get_weather">获取歌曲</button>
+
+
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data:{
+            music: "",
+			music_info:[],
+        },
+        methods:{
+            get_weather(){
+                //获取歌曲
+                axios.get("http://tingapi.ting.baidu.com/v1/restserver/ting",{
+                    params:{
+                        method: "baidu.ting.search.catalogSug",
+                        query: this.music,
+                    }
+                }).then(response=>{
+                    console.log(response.data)
+                }).catch(error=>{
+                    console.log(error.data)
+                })
+            },
+        }
+
+    })
+
+</script>
+</body>
+</html>

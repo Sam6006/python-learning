@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+<body>
+		
+<script>
+	//1.ES6常用语法
+		// 1.1 变量的定义
+			//1.1.1 let 定义变量
+				//-没有变量提升
+				//-不能重复定义
+				//-块级作用域
+			//1.1.2 const定义变量
+				//-没有变量提升
+				//-带来了块级作用域
+				//-不能重复定义
+				//-定义之后不能修改
+				//-定义的时候必须赋值
+	// console.log(username);
+	// var username = 'sam'
+	//var 定义的变量，只有全局作用域和函数作用域
+	//let 定义的变量，有全局作用域和函数作用域，块级作用域 {}
+	//console.log(username);
+	//let username = 'peiqi'
+
+	/*console.log(username)
+	const username = 'abc'
+	username = 'bbc'
+	*/
+
+	//解构
+	/*
+	let ary = [1,2,3];
+	let [a,b,c] = ary;
+	console.log(a,b,c);
+
+	let obj = {
+		username: "abc",
+		age: "23"
+	};
+	let {username, age} = obj;
+	console.log(username, age)
+	*/
+
+	//函数
+	//默认值参数
+	/*
+	function foo(x, y=10) {
+		let number = y;
+		return number;
+	}
+	ret = foo(1, 2);
+	ret1 = foo(1);
+	ret2 = foo(1,0);
+
+	console.log(ret);
+	console.log(ret1);
+	console.log(ret2);
+	*/
+	//箭头函数
+	/*
+	let foo = v => v;
+	ret = foo(10);
+	console.log(ret);
+	*/
+	//0个或多个参数
+	/*
+	let bar =(x, y) => {return x+y};
+	ret2 = bar(1,2);
+	console.log(ret2)
+	*/
+
+	//类
+	//class 关键字定义一个类
+		//-必须要有一个constructor方式(构造方法), 如果没有,constructor(){}
+		//必须使用new来实例化,否则报错
+		//继承-必须在子类的constructor方法里面写super方法
+	class Person{
+		constructor(username, age){
+			this.username = username;
+			this.age = age;
+		}
+		showInfo(){
+			console.log(this.username, this.age)
+		}
+	}
+	let guyahui = new Person("guyahui", 18);
+	guyahui.showInfo();
+	class Man extends Person{
+		constructor(username, age){
+			super();
+			this.username = username;
+			this.age = age;
+		}
+		showInfo(){
+			console.log(this.username, this.age)
+		}
+	}
+	let abc = new Man("abc", 20);
+	abc.showInfo()
+</script>
+</body>
+</html>

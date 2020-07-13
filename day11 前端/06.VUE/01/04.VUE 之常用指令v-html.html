@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+</head>
+<div id="app">
+    <p>{{message}}</p>
+    <p v-html="greeting"></p>
+    <p v-html="logo"></p>
+</div>
+<!--1. 可以在普通标签中使用{{  }} 或者 v-html 来输出data里面的数据-->
+<!--   输出文本内容:   <h1>{{message}}</h1>-->
+<!--   输出html内容:   <span v-html="message"></span>-->
+<!-- -->
+<!--2. 可以在表单标签中使用v-model属性来输出data里面的数据，同时还可以修改data里面的数据-->
+<!--   <input type="text" v-model="username">-->
+
+<script>
+    //数据模板引擎
+    //v-开头的指定是帮助我们渲染数据用的
+    new Vue({
+        el: "#app",
+        data:{
+            message:'hello vue',
+            greeting: "<h1>Hello Vue</h1>",
+            logo: "<img src='../static/logo.svg'>",
+        }
+    })
+</script>
+
+
+
+<body>
+
+</body>
+</html>

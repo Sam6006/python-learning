@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #card{
+            width: 500px;
+            height: 350px;
+        }
+        .title{
+            height:50px;
+        }
+        .title span{
+            width: 100px;
+            height: 50px;
+            background-color:#ccc;
+            display: inline-block;
+            line-height: 50px; /* 设置行和当前元素的高度相等,就可以让文本内容上下居中 */
+            text-align:center;
+        }
+        .content .list{
+            width: 500px;
+            height: 300px;
+            background-color: yellow;
+            display: none;
+        }
+        .content .active{
+            display: block;
+        }
+
+        .title .current{
+            background-color: yellow;
+        }
+    </style>
+    <script src="../static/vue.js"></script>
+</head>
+<body>
+
+    <div id="card">
+        <div class="title">
+            <span @click="num=key" :class="change(key)" v-for="title,key in title_list">{{title}}</span>
+
+        </div>
+        <div class="content">
+            <div class="list" :class="change(key,'active')" v-for="content,key in content_list">{{content}}</div>
+
+        </div>
+    </div>
+    <script>
+        var card = new Vue({
+            el:"#card",
+            data:{
+                num: 0,
+                title_list:[
+                   ' 国内新闻',
+                   ' 国际新闻',
+                    '银河新闻',
+                ],
+                content_list:[
+                    '国内新闻列表',
+                    '国际新闻列表',
+                    '银河新闻列表',
+                ]
+            },
+            methods:{
+                change(data,style='current'){
+                    if(this.num==data){
+                        return style;
+                    }
+                }
+            }
+
+        });
+    </script>
+
+</body>
+</html>

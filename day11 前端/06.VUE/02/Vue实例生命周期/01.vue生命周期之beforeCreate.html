@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../../static/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    {{name}}
+    <button @click="myClick">点击修改数据</button>
+</div>
+
+
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data:{
+            name:'alex',
+        },
+        methods:{
+            init:function () {
+                console.log(this.name);
+            },
+            myClick(){
+                this.name = 'sam';
+            },
+            beforeCreate() {
+                console.group('beforeCreate');
+                console.log('el:', this.$el);
+                console.log('data:', this.$data);
+                console.log('name:',this.name);
+                console.log('init:',this.init);
+                console.log('myclick:', this.myClick);
+                console.log('innerHTML:',document.getElementById('app').innerHTML);
+
+            },
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+	<script src="../static/axios.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <Demo></Demo>
+    <Demo></Demo>
+    <Demo></Demo>
+
+
+
+</div>
+<script>
+    //创建一个普通组件
+    Vue.component("Demo",{
+        template: `<div>
+                        <button @click="add">+</button>
+                        <input type="text" v-model="num"/>
+                        <button @click="num--">-</button>
+                     </div>`,
+        data(){
+            return {
+                num: 0,
+            }
+        },
+        methods:{
+            add(){
+                this.num++
+            }
+        }
+
+    });
+    var vm = new Vue({
+        el: "#app",
+    })
+
+</script>
+</body>
+</html>

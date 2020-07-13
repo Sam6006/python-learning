@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <p>{{num}}</p>
+    <p>{{num2}}</p>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data:{
+            num: 100,
+
+        },
+       //计算属性
+        computed:{
+            num2: function () {
+                return this.num **2
+            }
+        }
+    })
+
+
+</script>
+</body>
+</html>

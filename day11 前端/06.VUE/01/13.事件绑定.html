@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <button @click="add">+</button>
+    <input type="text" v-model="num">
+    <button @click="sub">-</button>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            num:0,
+        },
+        methods:{
+            add(){
+                if(this.num>=10){
+                    this.num=10;
+                }else{
+                    this.num++;
+                }
+            },
+            sub(){
+                if(this.num<1){
+                    this.num=0;
+                }else{
+                    this.num--;
+                }
+            }
+        }
+    });
+// 有两种事件操作的写法，@事件名 和 v-on:事件名
+    // 1. 使用@事件名来进行事件的绑定
+    //    语法：
+    //       <h1 @click="num++">{{num}}</h1>
+    //
+    // 2. 绑定的事件的事件名，全部都是js的事件名：
+    //    @submit   --->  onsubmit
+    //    @focus    --->  onfocus
+    //    @...      --->  on...
+
+
+
+</script>
+
+</body>
+</html>

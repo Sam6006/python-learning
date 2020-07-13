@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+    <style>
+        .red{
+            color:red;
+        }
+        .blue{
+            color:blue;
+        }
+    </style>
+
+</head>
+<body>
+<div id="app">
+    <button @click="num++">+</button>
+    <input :class="{red:than_100, blue:less_100}" type="text" v-model="num">
+    <button @click="num--">-</button>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data:{
+            num: 100,
+            than_100: false,
+            less_100:false,
+
+        },
+        //侦听属性
+        //实时监控属性本 身的值是否发生变化，如果发生变化则执行watch里面同名方式
+        watch:{
+            num(){
+                if(this.num<100){
+                    this.less_100= true;
+                    this.than_100= false;
+                }else if(this.num>100){
+                    this.less_100= false;
+                    this.than_100= true;
+                }else{
+                    this.than_100= false;
+                    this.less_100= true;
+                }
+            }
+        },
+    });
+
+
+</script>
+</body>
+</html>

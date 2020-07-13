@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+    <link rel="stylesheet" href="../static/todolist.css">
+</head>
+<body>
+	<div class="list_con">
+		<h2>To do list</h2>
+		<input type="text" name="" id="txt1" class="inputtxt">
+		<input type="button" name="" value="增加" id="btn1" class="inputbtn">
+
+		<ul id="list" class="list">
+			<!-- javascript:; # 阻止a标签跳转 -->
+			<li>
+				<span>学习html</span>
+				<a href="javascript:;" class="up"> ↑ </a>
+				<a href="javascript:;" class="down"> ↓ </a>
+				<a href="javascript:;" class="del">删除</a>
+			</li>
+			<li><span>学习css</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+			<li><span>学习javascript</span><a href="javascript:;" class="up"> ↑ </a><a href="javascript:;" class="down"> ↓ </a><a href="javascript:;" class="del">删除</a></li>
+		</ul>
+	</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data:{
+
+        },
+    })
+
+</script>
+</body>
+</html>

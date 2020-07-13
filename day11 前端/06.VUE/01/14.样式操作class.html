@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+    <style>
+        .p1{
+            color: red;
+        }
+        .p2{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p :class="{p1:true,p2:false}">hello vue</p>
+    <p :class="cls">一个文本段落</p>
+    <p :class="['p1', 'p2']">又一个文本段落</p>
+    <p :class="cls2">hello world</p>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            cls:{p1:true, p2:true},
+            cls2:['p1','p2']
+        },
+
+    });
+
+
+
+</script>
+
+</body>
+</html>

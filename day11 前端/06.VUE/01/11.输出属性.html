@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-eqviv="conten-Type" charset="UTF-8">
+    <meta http-eqviv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="../static/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <a :href="url">
+        <img :src="img" alt="">
+        路飞学城
+    </a>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            url: "http://www.luffycity.com",
+            img: 'static/logo.svg',
+        }
+    })
+
+
+
+
+</script>
+
+</body>
+</html>
